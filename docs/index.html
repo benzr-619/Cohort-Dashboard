@@ -214,6 +214,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 14px;
+      align-items: start;
     }
 
     /* ── Card ────────────────────────────────────────────── */
@@ -301,15 +302,6 @@
     .countdown-this_week { background: var(--this-week-bg); color: #854d0e; }
     .countdown-next_two_weeks { background: var(--next-two-bg); color: #1d4ed8; }
     .countdown-later     { background: var(--later-bg); color: var(--later); border: 1px solid var(--border); }
-
-    .weight-badge {
-      font-size: .72rem;
-      font-weight: 600;
-      padding: 2px 7px;
-      border-radius: 4px;
-      background: #f1f5f9;
-      color: var(--text-muted);
-    }
 
     .expand-row {
       display: flex;
@@ -869,9 +861,6 @@ function renderCard(item) {
        ${cd ? `<span class="countdown ${cdCls}" data-due="${esc(item.due_at)}">${esc(cd)}</span>` : ''}`
     : `<span style="color:var(--text-light);font-size:.78rem">No due date</span>`;
 
-  const weightHtml = item.weight
-    ? `<span class="weight-badge">${esc(item.weight)}</span>` : '';
-
   // Detail section: description
   const descHeading = item.type === 'reading_bundle' ? 'Session readings' : 'What\'s required';
   const descHtml = item.details_html
@@ -949,7 +938,6 @@ function renderCard(item) {
       <div class="card-title">${esc(item.title)}</div>
       <div class="card-meta">
         ${dateHtml}
-        ${weightHtml}
       </div>
     </div>
     ${expandRow}

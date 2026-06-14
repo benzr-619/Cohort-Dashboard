@@ -61,7 +61,6 @@ WEIGHT_MAP = [
     (249500, "strategic company",  "20%"),
     (249500, "policy memo",        "25%"),
     (249500, "synthesis paper",    "40%"),
-    (249500, "participation",      "15%"),
     (246952, "reflection",         "~1 pt"),
     (246952, "group project",      "50%"),
     (246952, "final presentation", "30%"),
@@ -616,6 +615,9 @@ def main():
         # ── Process assignments ──────────────────────────────────
         now_utc = datetime.now(timezone.utc)
         for a in (assignments or []):
+            # Skip Pharma class participation (no deliverable)
+            if course_id == 249500 and "participation" in (a.get("name") or "").lower():
+                continue
             # Skip assignments already past due by more than 48 hours
             due_str = a.get("due_at") or ""
             if due_str:
@@ -729,14 +731,24 @@ def main():
             summary_item["id"]    = item["id"] + "-summary"
             summary_item["title"] = "APEx: Executive Summary (Final)"
             expanded.append(summary_item)
-            # Peer Review card (due one day later if possible, same date otherwise)
+            # Peer Review card — due June 28 (rubric must be returned to peer by email)
             peer_item = dict(item)
-            peer_item["id"]    = item["id"] + "-peer-review"
-            peer_item["title"] = "APEx: Peer Review"
+            peer_item["id"]     = item["id"] + "-peer-review"
+            peer_item["title"]  = "APEx: Peer Review"
+            peer_item["due_at"] = "2026-06-28T23:59:00-04:00"
+            peer_item["urgency"] = compute_urgency("2026-06-28T23:59:00-04:00")
             peer_item["details_html"] = (
-                "<p>Complete a structured peer review of a classmate's APEx Executive Summary. "
-                "Reviewer assignments are made by program staff — check your Canvas inbox or "
-                "the EXEC shell for your assigned peer.</p>"
+                "<p>Review your assigned peer's Executive Summary Draft and return a completed "
+                "rubric to them by email no later than <strong>11:59pm Sunday, June 28</strong>. "
+                "The department expects peer reviewers to meet with their peer to discuss comments.</p>"
+                "<p>Your peer reviewer pairing is listed "
+                '<a href="https://courseworks2.columbia.edu/courses/47471/files/26988702'
+                '?verifier=1xKno9X03eErRfHqefwHDsHYINDsvyLPpsZb4Dpi&amp;wrap=1" '
+                'target="_blank" rel="noopener noreferrer">here</a>.</p>'
+                "<p>Peer Review Rubric: "
+                '<a href="https://courseworks2.columbia.edu/courses/47471/files/19742606'
+                '?verifier=J8fRJCYZGJlMa3rmbyuQrPrEUtc4IDR0ONEL9EZK&amp;wrap=1" '
+                'target="_blank" rel="noopener noreferrer">Rubric for Executive Summary Peer Review</a></p>'
             )
             expanded.append(peer_item)
         else:

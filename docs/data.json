@@ -493,42 +493,6 @@
       ],
       "groups": []
     },
-    {
-      "id": "canvas-249500-1651825",
-      "title": "Class Participation",
-      "course_short": "Pharma",
-      "course_id": 249500,
-      "course_name": "The Pharmaceutical Industry (P8237)",
-      "course_color": "#4f46e5",
-      "course_bg": "#ede9fe",
-      "due_at": null,
-      "lock_at": null,
-      "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651825",
-      "points": 15.0,
-      "weight": "15%",
-      "details_html": "",
-      "type": "assignment",
-      "category": "Pharma",
-      "source": "canvas",
-      "urgency": "undated",
-      "syllabus_url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus",
-      "readings": [],
-      "files": [
-        {
-          "name": "Course Modules",
-          "url": "https://courseworks2.columbia.edu/courses/249500/modules"
-        },
-        {
-          "name": "Course Files",
-          "url": "https://courseworks2.columbia.edu/courses/249500/files"
-        },
-        {
-          "name": "Syllabus",
-          "url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus"
-        }
-      ],
-      "groups": []
-    }
   ],
   "courses": {
     "249500": {
