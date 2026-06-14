@@ -618,12 +618,12 @@ def main():
             # Skip Pharma class participation (no deliverable)
             if course_id == 249500 and "participation" in (a.get("name") or "").lower():
                 continue
-            # Skip assignments already past due by more than 48 hours
+            # Skip assignments already past due by more than 24 hours
             due_str = a.get("due_at") or ""
             if due_str:
                 try:
                     due_dt = datetime.fromisoformat(due_str.replace("Z", "+00:00"))
-                    if (now_utc - due_dt).total_seconds() > 48 * 3600:
+                    if (now_utc - due_dt).total_seconds() > 24 * 3600:
                         continue
                 except Exception:
                     pass

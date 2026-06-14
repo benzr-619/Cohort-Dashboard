@@ -2,42 +2,6 @@
   "generated_at": "2026-06-14T15:35:27.625830-04:00",
   "items": [
     {
-      "id": "canvas-246952-1668520",
-      "title": "Problem Canvas (from AI Lab #1) ",
-      "course_short": "Health Innovation",
-      "course_id": 246952,
-      "course_name": "Health Innovation & Technology (P8536)",
-      "course_color": "#059669",
-      "course_bg": "#dcfce7",
-      "due_at": "2026-06-13T13:00:00Z",
-      "lock_at": "2026-06-15T03:59:59Z",
-      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1668520",
-      "points": 100.0,
-      "weight": null,
-      "details_html": "<p>Review the materials from the first AI Lab and submit your 1-page canvas here. Please have this done before the first class (Saturday, June 13 at 9:00 am). Feel free to reach out with any questions:\u00a0</p>\n<p><span><a href=\"mailto:ykogan@northwell.edu\" target=\"_blank\" rel=\"noopener noreferrer\">ykogan@northwell.edu</a> or <a href=\"mailto:amm2645@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">amm2645@cumc.columbia.edu</a></span></p>\n<p>\u00a0</p>",
-      "type": "assignment",
-      "category": "Health Innovation",
-      "source": "canvas",
-      "urgency": "overdue",
-      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
-      "readings": [],
-      "files": [
-        {
-          "name": "Course Modules",
-          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
-        },
-        {
-          "name": "Course Files",
-          "url": "https://courseworks2.columbia.edu/courses/246952/files"
-        },
-        {
-          "name": "Syllabus",
-          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
-        }
-      ],
-      "groups": []
-    },
-    {
       "id": "canvas-246952-1669698",
       "title": "Problem Canvas & Plan",
       "course_short": "Health Innovation",
