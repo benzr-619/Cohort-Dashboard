@@ -61,7 +61,6 @@ WEIGHT_MAP = [
     (249500, "strategic company",  "20%"),
     (249500, "policy memo",        "25%"),
     (249500, "synthesis paper",    "40%"),
-    (246952, "reflection",         "~1 pt"),
     (246952, "group project",      "50%"),
     (246952, "final presentation", "30%"),
     (246952, "participation",      "20%"),
@@ -617,6 +616,9 @@ def main():
         for a in (assignments or []):
             # Skip Pharma class participation (no deliverable)
             if course_id == 249500 and "participation" in (a.get("name") or "").lower():
+                continue
+            # Skip Health Innovation session reflections (completed during class time)
+            if course_id == 246952 and "reflection" in (a.get("name") or "").lower():
                 continue
             # Skip assignments already past due by more than 24 hours
             due_str = a.get("due_at") or ""

@@ -1294,6 +1294,14 @@ async function loadData() {
 
     document.getElementById('loading').style.display   = 'none';
     document.getElementById('board-content').style.display = 'block';
+
+    // Hide filter chips for categories with no items
+    const categories = new Set((DATA.items || []).flatMap(i => [i.course_short, i.category].filter(Boolean)));
+    document.querySelectorAll('.chip[data-filter]').forEach(chip => {
+      const f = chip.dataset.filter;
+      if (f !== 'all' && !categories.has(f)) chip.style.display = 'none';
+    });
+
     renderBoard();
   } catch(err) {
     console.error(err);

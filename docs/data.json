@@ -38,42 +38,6 @@
       "groups": []
     },
     {
-      "id": "canvas-246952-1661641",
-      "title": "Session 1 Reflection: Health IT Overview (June 26)",
-      "course_short": "Health Innovation",
-      "course_id": 246952,
-      "course_name": "Health Innovation & Technology (P8536)",
-      "course_color": "#059669",
-      "course_bg": "#dcfce7",
-      "due_at": "2026-06-16T03:59:59Z",
-      "lock_at": "2026-06-16T13:00:00Z",
-      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1661641",
-      "points": 1.0,
-      "weight": "~1 pt",
-      "details_html": "",
-      "type": "assignment",
-      "category": "Health Innovation",
-      "source": "canvas",
-      "urgency": "due_soon",
-      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
-      "readings": [],
-      "files": [
-        {
-          "name": "Course Modules",
-          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
-        },
-        {
-          "name": "Course Files",
-          "url": "https://courseworks2.columbia.edu/courses/246952/files"
-        },
-        {
-          "name": "Syllabus",
-          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
-        }
-      ],
-      "groups": []
-    },
-    {
       "id": "canvas-249500-1651829",
       "title": "Strategic Company Evaluation",
       "course_short": "Pharma",
