@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HPM EXEC 2026 · Deadline Board</title>
+  <style>
+    /* ── Base ────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #f1f5f9;
+      --card-bg:     #ffffff;
+      --header-bg:   #1e293b;
+      --header-text: #f8fafc;
+      --controls-bg: #ffffff;
+      --border:      #e2e8f0;
+      --text:        #1e293b;
+      --text-muted:  #64748b;
+      --text-light:  #94a3b8;
+
+      --overdue:        #ef4444;
+      --overdue-bg:     #fef2f2;
+      --due-soon:       #f97316;
+      --due-soon-bg:    #fff7ed;
+      --this-week:      #eab308;
+      --this-week-bg:   #fefce8;
+      --next-two:       #3b82f6;
+      --next-two-bg:    #eff6ff;
+      --later:          #64748b;
+      --later-bg:       #f8fafc;
+      --undated:        #8b5cf6;
+      --undated-bg:     #faf5ff;
+      --todo:           #7c3aed;
+      --todo-bg:        #f5f3ff;
+
+      --radius:    12px;
+      --radius-sm: 6px;
+      --shadow:    0 1px 3px rgba(0,0,0,.07), 0 2px 8px rgba(0,0,0,.05);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,.10);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ──────────────────────────────────────────── */
+    .site-header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 20px 24px 16px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .site-header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -.01em;
+    }
+
+    .site-header .subtitle {
+      font-size: .8rem;
+      color: #94a3b8;
+      margin-top: 2px;
+    }
+
+    /* ── Controls ────────────────────────────────────────── */
+    .controls {
+      background: var(--controls-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      position: sticky;
+      top: 84px;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .controls-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 180px;
+      max-width: 320px;
+    }
+
+    .search-wrap svg {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+    }
+
+    #search {
+      width: 100%;
+      padding: 8px 12px 8px 34px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: .875rem;
+      outline: none;
+      transition: border-color .15s;
+    }
+
+    #search:focus { border-color: #6366f1; }
+
+    .toggle-btn {
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: white;
+      font-size: .8rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background .15s, border-color .15s;
+    }
+
+    .toggle-btn.active {
+      background: #1e293b;
+      color: white;
+      border-color: #1e293b;
+    }
+
+    .chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: white;
+      font-size: .775rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all .15s;
+    }
+
+    .chip:hover { border-color: #94a3b8; }
+
+    .chip.active {
+      color: white;
+      border-color: transparent;
+    }
+
+    .chip[data-filter="all"].active       { background: #1e293b; }
+    .chip[data-filter="Pharma"].active    { background: #4f46e5; }
+    .chip[data-filter="Health Innovation"].active { background: #059669; }
+    .chip[data-filter="EXEC/Grad"].active { background: #d97706; }
+    .chip[data-filter="Simulation"].active { background: #6b7280; }
+    .chip[data-filter="todos"].active     { background: #7c3aed; }
+
+    /* ── Board layout ────────────────────────────────────── */
+    .board {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    /* ── Section ─────────────────────────────────────────── */
+    .section { margin-bottom: 32px; }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .section-count {
+      font-size: .8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section label colors */
+    .label-overdue      { background: var(--overdue-bg);   color: var(--overdue); }
+    .label-due_soon     { background: var(--due-soon-bg);  color: var(--due-soon); }
+    .label-this_week    { background: var(--this-week-bg); color: #854d0e; }
+    .label-next_two_weeks { background: var(--next-two-bg); color: #1d4ed8; }
+    .label-later        { background: var(--later-bg);     color: var(--later); border: 1px solid var(--border); }
+    .label-undated      { background: var(--undated-bg);   color: var(--undated); }
+    .label-todos        { background: var(--todo-bg);      color: var(--todo); }
+
+    /* ── Card grid ───────────────────────────────────────── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 14px;
+    }
+
+    /* ── Card ────────────────────────────────────────────── */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: box-shadow .15s, transform .1s;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-1px);
+    }
+
+    .card-stripe {
+      height: 4px;
+    }
+
+    .card-top {
+      padding: 14px 16px 10px;
+      cursor: pointer;
+    }
+
+    .card-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+
+    .badge-source {
+      background: var(--todo-bg);
+      color: var(--todo);
+    }
+
+    .badge-type-announcement {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .card-title {
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: .8rem;
+      color: var(--text-muted);
+    }
+
+    .due-date {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+    }
+
+    .countdown {
+      font-size: .75rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .countdown-overdue   { background: var(--overdue-bg);   color: var(--overdue); }
+    .countdown-due_soon  { background: var(--due-soon-bg);  color: var(--due-soon); }
+    .countdown-this_week { background: var(--this-week-bg); color: #854d0e; }
+    .countdown-next_two_weeks { background: var(--next-two-bg); color: #1d4ed8; }
+    .countdown-later     { background: var(--later-bg); color: var(--later); border: 1px solid var(--border); }
+
+    .weight-badge {
+      font-size: .72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: var(--text-muted);
+    }
+
+    .expand-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 16px 12px;
+      border-top: 1px solid #f1f5f9;
+      cursor: pointer;
+    }
+
+    .expand-label {
+      font-size: .75rem;
+      color: #6366f1;
+      font-weight: 500;
+    }
+
+    .expand-arrow {
+      transition: transform .2s;
+      color: #6366f1;
+      font-size: .7rem;
+    }
+
+    .card.expanded .expand-arrow {
+      transform: rotate(180deg);
+    }
+
+    /* ── Card detail (expanded) ──────────────────────────── */
+    .card-detail {
+      display: none;
+      padding: 16px;
+      border-top: 1px solid var(--border);
+      background: #fafafa;
+    }
+
+    .card.expanded .card-detail { display: block; }
+
+    .detail-section {
+      margin-bottom: 16px;
+    }
+
+    .detail-section:last-child { margin-bottom: 0; }
+
+    .detail-heading {
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .detail-html {
+      font-size: .875rem;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    .detail-html p  { margin-bottom: 8px; }
+    .detail-html ul,
+    .detail-html ol { padding-left: 18px; margin-bottom: 8px; }
+    .detail-html li { margin-bottom: 3px; }
+    .detail-html h1,
+    .detail-html h2,
+    .detail-html h3 { font-size: .95rem; font-weight: 600; margin-bottom: 6px; }
+    .detail-html a  { color: #4f46e5; }
+    .detail-html table { border-collapse: collapse; width: 100%; font-size: .82rem; }
+    .detail-html th,
+    .detail-html td { border: 1px solid var(--border); padding: 4px 8px; }
+    .detail-html pre { background: #f1f5f9; padding: 10px; border-radius: 4px; overflow-x: auto; font-size: .8rem; }
+
+    .file-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .file-links a {
+      font-size: .82rem;
+      color: #4f46e5;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .file-links a:hover { text-decoration: underline; }
+
+    .group-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .group-item {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+    }
+
+    .group-name {
+      font-size: .8rem;
+      font-weight: 600;
+      color: #059669;
+      margin-bottom: 4px;
+    }
+
+    .group-members {
+      font-size: .78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .canvas-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 4px;
+      font-size: .8rem;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .canvas-link:hover { text-decoration: underline; }
+
+    /* ── Course header (by-course view) ──────────────────── */
+    .course-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .course-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .course-title {
+      font-size: .9rem;
+      font-weight: 600;
+    }
+
+    .syllabus-link {
+      font-size: .75rem;
+      color: #4f46e5;
+      text-decoration: none;
+      padding: 2px 8px;
+      border: 1px solid #c7d2fe;
+      border-radius: 4px;
+    }
+
+    .syllabus-link:hover { background: #ede9fe; }
+
+    /* ── Empty state ─────────────────────────────────────── */
+    .empty {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+    }
+
+    .empty .icon { font-size: 2rem; margin-bottom: 8px; }
+
+    /* ── Loading ─────────────────────────────────────────── */
+    #loading {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--text-muted);
+    }
+
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: #6366f1;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Error ───────────────────────────────────────────── */
+    #error {
+      display: none;
+      margin: 40px auto;
+      max-width: 480px;
+      background: var(--overdue-bg);
+      border: 1px solid #fecaca;
+      border-radius: var(--radius);
+      padding: 24px;
+      color: var(--overdue);
+      text-align: center;
+    }
+
+    /* ── Footer ──────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      font-size: .75rem;
+      color: var(--text-light);
+      padding: 20px 16px;
+      border-top: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    /* ── Pending upload callout (inside card detail) ─────── */
+    .pending-callout {
+      background: #fefce8;
+      border: 1px solid #fde047;
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: .8rem;
+      color: #713f12;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    /* ── Reading badge ───────────────────────────────────── */
+    .badge-reading-required    { background: #eff6ff; color: #1d4ed8; }
+    .badge-reading-recommended { background: #f0fdf4; color: #15803d; }
+
+    /* ── Weekend schedule view ───────────────────────────── */
+    .weekend-block {
+      margin-bottom: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .weekend-block.past { opacity: .65; }
+
+    .weekend-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 18px;
+      background: #1e293b;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    .weekend-header .wh-label {
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .weekend-header .wh-dates {
+      font-size: .78rem;
+      color: #94a3b8;
+    }
+
+    .wh-past-badge {
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #374151;
+      color: #9ca3af;
+      margin-left: auto;
+    }
+
+    .wh-countdown {
+      font-size: .72rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-left: auto;
+    }
+
+    .weekend-days { padding: 0 18px 14px; }
+
+    .weekend-day {
+      padding: 14px 0 0;
+    }
+
+    .day-label {
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text-muted);
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 10px;
+    }
+
+    .session-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .session-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .session-content { flex: 1; min-width: 0; }
+
+    .session-title {
+      font-size: .875rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .session-topic {
+      font-size: .78rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .session-readings-list {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .session-reading-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: .78rem;
+      line-height: 1.35;
+    }
+
+    .reading-type-dot {
+      font-size: .65rem;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .rtd-required    { background: #eff6ff; color: #1d4ed8; }
+    .rtd-recommended { background: #f0fdf4; color: #15803d; }
+
+    .reading-title-text { color: var(--text); }
+    .reading-title-text a { color: #4f46e5; text-decoration: none; }
+    .reading-title-text a:hover { text-decoration: underline; }
+
+    .reading-pending {
+      font-size: .65rem;
+      color: #a16207;
+      background: #fefce8;
+      border: 1px solid #fde047;
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Gap section (between weekends) ──────────────────── */
+    .gap-section { margin-bottom: 8px; }
+
+    .gap-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .gap-label {
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text-muted);
+      padding: 3px 10px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+
+    /* ── Overdue visual de-emphasis ──────────────────────── */
+    .card.past-due {
+      opacity: .75;
+    }
+
+    /* ── Urgency stripe colors ───────────────────────────── */
+    .stripe-overdue      { background: var(--overdue); }
+    .stripe-due_soon     { background: var(--due-soon); }
+    .stripe-this_week    { background: var(--this-week); }
+    .stripe-next_two_weeks { background: var(--next-two); }
+    .stripe-later        { background: var(--later); }
+    .stripe-undated      { background: var(--undated); }
+    .stripe-todo         { background: var(--todo); }
+
+    /* ── Responsive ──────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .site-header { padding: 16px; }
+      .controls { padding: 10px 16px; top: 76px; }
+      .board { padding: 16px 12px 40px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .search-wrap { max-width: 100%; }
+      .controls-row { gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────── -->
+<header class="site-header">
+  <h1>HPM EXEC 2026 &middot; Deadline Board</h1>
+  <div class="subtitle">Columbia Mailman &middot; Health Policy &amp; Management &mdash; EXEC Class of 2026</div>
+</header>
+
+<!-- ── Controls ────────────────────────────────────────────── -->
+<div class="controls">
+  <div class="controls-row">
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input id="search" type="text" placeholder="Search assignments&hellip;" autocomplete="off">
+    </div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap">
+      <button class="toggle-btn active" id="btn-urgency"  onclick="setGroupBy('urgency')">By Urgency</button>
+      <button class="toggle-btn"        id="btn-course"   onclick="setGroupBy('course')">By Course</button>
+      <button class="toggle-btn"        id="btn-weekend"  onclick="setGroupBy('weekend')">By Weekend</button>
+    </div>
+  </div>
+  <div class="chips" id="filter-chips">
+    <button class="chip active" data-filter="all"              onclick="setFilter('all')">All</button>
+    <button class="chip"        data-filter="Pharma"           onclick="setFilter('Pharma')">💊 Pharma</button>
+    <button class="chip"        data-filter="Health Innovation" onclick="setFilter('Health Innovation')">🤖 Health Innovation</button>
+    <button class="chip"        data-filter="EXEC/Grad"        onclick="setFilter('EXEC/Grad')">🎓 EXEC/Grad</button>
+    <button class="chip"        data-filter="Simulation"       onclick="setFilter('Simulation')">📊 Simulation</button>
+  </div>
+</div>
+
+<!-- ── Board ────────────────────────────────────────────────── -->
+<main class="board">
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Loading deadline data&hellip;</p>
+  </div>
+  <div id="error">
+    <div style="font-size:1.5rem;margin-bottom:8px">⚠️</div>
+    <strong>Could not load data.json</strong>
+    <p style="margin-top:8px;font-size:.85rem">Run <code>Update Dashboard.command</code> to generate the data file, then refresh this page.</p>
+  </div>
+  <div id="board-content" style="display:none"></div>
+</main>
+
+<footer id="footer">
+  Unofficial group resource &mdash; verify deadlines in CourseWorks
+</footer>
+
+<script>
+// ── State ────────────────────────────────────────────────────
+let DATA = null;
+let state = {
+  groupBy:    localStorage.getItem('groupBy') || 'urgency',
+  filter:     localStorage.getItem('filter')  || 'all',
+  search:     '',
+};
+
+// ── Formatting helpers ───────────────────────────────────────
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const DAYS   = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+function fmtDate(iso) {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (isNaN(d)) return null;
+  return `${DAYS[d.getDay()]} ${MONTHS[d.getMonth()]} ${d.getDate()}`;
+}
+
+function countdown(iso) {
+  if (!iso) return null;
+  const due = new Date(iso);
+  if (isNaN(due)) return null;
+  const now  = new Date();
+  const diff = due - now;
+  const absH = Math.abs(diff) / 3600000;
+  const past = diff < 0;
+
+  let label;
+  if (absH < 1)       label = past ? 'just passed' : 'in <1 hr';
+  else if (absH < 24) label = past ? `${Math.round(absH)}h ago` : `in ${Math.round(absH)}h`;
+  else {
+    const d = Math.round(absH / 24);
+    if (d === 1)       label = past ? 'yesterday' : 'tomorrow';
+    else               label = past ? `${d} days ago` : `in ${d} days`;
+  }
+  return label;
+}
+
+function urgencyClass(u) {
+  if (u === 'overdue')         return 'countdown-overdue';
+  if (u === 'due_soon')        return 'countdown-due_soon';
+  if (u === 'this_week')       return 'countdown-this_week';
+  if (u === 'next_two_weeks')  return 'countdown-next_two_weeks';
+  return 'countdown-later';
+}
+
+function recomputeUrgency(iso) {
+  if (!iso) return 'undated';
+  const diff = new Date(iso) - new Date();
+  const h    = diff / 3600000;
+  if (h < 0)      return 'overdue';
+  if (h < 48)     return 'due_soon';
+  if (h < 168)    return 'this_week';
+  if (h < 336)    return 'next_two_weeks';
+  return 'later';
+}
+
+function esc(str) {
+  return String(str || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Card renderer ────────────────────────────────────────────
+function renderCard(item) {
+  const urgency  = item.due_at ? recomputeUrgency(item.due_at) : (item.urgency || 'undated');
+  const isTodo   = item.source === 'manual' || item.type === 'announcement';
+  const dateStr  = fmtDate(item.due_at);
+  const cd       = countdown(item.due_at);
+  const cdCls    = urgency !== 'undated' ? urgencyClass(urgency) : '';
+  const stripeColor = isTodo ? 'stripe-todo' : `stripe-${urgency}`;
+  const isPast   = urgency === 'overdue';
+
+  const courseBadge = `<span class="badge" style="background:${esc(item.course_bg||'#f1f5f9')};color:${esc(item.course_color||'#64748b')}">${esc(item.course_short)}</span>`;
+  const sourceBadge = item.source === 'manual'
+    ? `<span class="badge badge-source">To-do</span>` : '';
+  const annBadge = item.type === 'announcement'
+    ? `<span class="badge badge-type-announcement">Announcement</span>` : '';
+  const readingBadge = item.type === 'reading'
+    ? `<span class="badge ${item.reading_type === 'Recommended' ? 'badge-reading-recommended' : 'badge-reading-required'}">${esc(item.reading_type || 'Required')} Reading</span>`
+    : item.type === 'reading_bundle'
+    ? `<span class="badge badge-reading-required">Readings</span>`
+    : '';
+
+  const dateHtml = dateStr
+    ? `<span class="due-date">
+         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+         ${esc(dateStr)}
+       </span>
+       ${cd ? `<span class="countdown ${cdCls}" data-due="${esc(item.due_at)}">${esc(cd)}</span>` : ''}`
+    : `<span style="color:var(--text-light);font-size:.78rem">No due date</span>`;
+
+  const weightHtml = item.weight
+    ? `<span class="weight-badge">${esc(item.weight)}</span>` : '';
+
+  // Detail section: description
+  const descHeading = item.type === 'reading_bundle' ? 'Session readings' : 'What\'s required';
+  const descHtml = item.details_html
+    ? `<div class="detail-section">
+         <div class="detail-heading">${descHeading}</div>
+         <div class="detail-html">${item.details_html}</div>
+       </div>` : '';
+
+  // Detail section: files & resources
+  let filesHtml = '';
+  if (item.files && item.files.length) {
+    const links = item.files.map(f =>
+      `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">
+         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+         ${esc(f.name)}
+       </a></li>`
+    ).join('');
+    filesHtml = `<div class="detail-section">
+      <div class="detail-heading">Files &amp; Resources</div>
+      <ul class="file-links">${links}</ul>
+    </div>`;
+  } else if (item.syllabus_url) {
+    filesHtml = `<div class="detail-section">
+      <div class="detail-heading">Resources</div>
+      <ul class="file-links">
+        <li><a href="${esc(item.syllabus_url)}" target="_blank" rel="noopener">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Syllabus
+        </a></li>
+      </ul>
+    </div>`;
+  }
+
+  // Detail section: group roster
+  let groupsHtml = '';
+  if (item.groups && item.groups.length) {
+    const rendered = item.groups.map(g =>
+      `<div class="group-item">
+         <div class="group-name">👥 ${esc(g.name)}</div>
+         <div class="group-members">${g.members.map(esc).join(' · ')}</div>
+       </div>`
+    ).join('');
+    groupsHtml = `<div class="detail-section">
+      <div class="detail-heading">Groups / Teams</div>
+      <div class="group-list">${rendered}</div>
+    </div>`;
+  }
+
+  // Canvas link
+  const canvasLink = item.link
+    ? `<a class="canvas-link" href="${esc(item.link)}" target="_blank" rel="noopener">
+         Open in CourseWorks
+         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+       </a>` : '';
+
+  const hasDetail = descHtml || filesHtml || groupsHtml || item.link;
+  const expandRow = hasDetail
+    ? `<div class="expand-row" onclick="toggleCard(this.closest('.card'))">
+         <span class="expand-label">Details</span>
+         <span class="expand-arrow">&#9660;</span>
+       </div>` : '';
+
+  const detail = hasDetail
+    ? `<div class="card-detail">
+         ${descHtml}
+         ${groupsHtml}
+         ${filesHtml}
+         ${canvasLink ? `<div class="detail-section">${canvasLink}</div>` : ''}
+       </div>` : '';
+
+  return `<div class="card${isPast ? ' past-due' : ''}" data-id="${esc(item.id)}">
+    <div class="card-stripe ${stripeColor}"></div>
+    <div class="card-top" onclick="toggleCard(this.closest('.card'))">
+      <div class="card-badges">${courseBadge}${sourceBadge}${annBadge}${readingBadge}</div>
+      <div class="card-title">${esc(item.title)}</div>
+      <div class="card-meta">
+        ${dateHtml}
+        ${weightHtml}
+      </div>
+    </div>
+    ${expandRow}
+    ${detail}
+  </div>`;
+}
+
+// ── Card expand/collapse ─────────────────────────────────────
+function toggleCard(cardEl) {
+  if (!cardEl) return;
+  cardEl.classList.toggle('expanded');
+}
+
+// ── Filter logic ─────────────────────────────────────────────
+function applyFilters(items) {
+  const search  = state.search.trim().toLowerCase();
+  const filter  = state.filter;
+
+  return items.filter(item => {
+    // Course / category filter
+    if (filter !== 'all') {
+      if (item.course_short !== filter && item.category !== filter) return false;
+    }
+    // Text search
+    if (search) {
+      const hay = [item.title, item.course_short, item.category, item.details_html || '']
+        .join(' ').toLowerCase();
+      if (!hay.includes(search)) return false;
+    }
+    return true;
+  });
+}
+
+// ── Render board ─────────────────────────────────────────────
+const URGENCY_ORDER  = ['overdue','due_soon','this_week','next_two_weeks','later','undated'];
+const URGENCY_LABELS = {
+  overdue:          { label: '⚠️ Overdue',       cls: 'label-overdue' },
+  due_soon:         { label: '⚡ Due Soon',       cls: 'label-due_soon' },
+  this_week:        { label: '📅 This Week',      cls: 'label-this_week' },
+  next_two_weeks:   { label: '📆 Next 2 Weeks',   cls: 'label-next_two_weeks' },
+  later:            { label: '🗓 Later',           cls: 'label-later' },
+  undated:          { label: '— No Due Date',    cls: 'label-undated' },
+};
+
+function renderBoard() {
+  if (!DATA) return;
+
+  const allItems = DATA.items || [];
+  const filtered = applyFilters(allItems);
+
+  let html = '';
+
+  if (state.groupBy === 'course') {
+    html = renderByCourse(filtered);
+  } else if (state.groupBy === 'weekend') {
+    html = renderByWeekend(filtered, DATA.schedule);
+  } else {
+    html = renderByUrgency(filtered);
+  }
+
+  if (!html) {
+    html = `<div class="empty">
+      <div class="icon">🔍</div>
+      <p>No items match your filters.</p>
+    </div>`;
+  }
+
+  document.getElementById('board-content').innerHTML = html;
+}
+
+function renderByUrgency(items) {
+  const grouped = {};
+  for (const u of URGENCY_ORDER) grouped[u] = [];
+  for (const item of items) {
+    const u = item.due_at ? recomputeUrgency(item.due_at) : 'undated';
+    (grouped[u] || grouped.undated).push(item);
+  }
+
+  let html = '';
+  for (const u of URGENCY_ORDER) {
+    const bucket = grouped[u];
+    if (!bucket.length) continue;
+    const meta = URGENCY_LABELS[u];
+    html += `<div class="section">
+      <div class="section-header">
+        <span class="section-label ${meta.cls}">${meta.label}</span>
+        <span class="section-count">${bucket.length} item${bucket.length !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="card-grid">${bucket.map(renderCard).join('')}</div>
+    </div>`;
+  }
+  return html;
+}
+
+function renderByCourse(items) {
+  const courses = DATA.courses || {};
+  let html = '';
+
+  for (const [courseId, info] of Object.entries(courses)) {
+    const bucket = items.filter(i => String(i.course_id) === courseId);
+    if (!bucket.length) continue;
+
+    const syllabusUrl = bucket.find(i => i.syllabus_url)?.syllabus_url;
+    const syllabusChip = syllabusUrl
+      ? `<a class="syllabus-link" href="${esc(syllabusUrl)}" target="_blank" rel="noopener">Syllabus ↗</a>`
+      : '';
+
+    html += `<div class="section">
+      <div class="course-header">
+        <div class="course-dot" style="background:${esc(info.color)}"></div>
+        <span class="course-title">${esc(info.name)}</span>
+        ${syllabusChip}
+      </div>
+      <div class="card-grid">${bucket.map(renderCard).join('')}</div>
+    </div>`;
+  }
+
+  // Manual/uncategorized items that don't match a Canvas course_id
+  const uncategorized = items.filter(i => !i.course_id);
+  if (uncategorized.length) {
+    html += `<div class="section">
+      <div class="course-header">
+        <div class="course-dot" style="background:#7c3aed"></div>
+        <span class="course-title">Other / Manual</span>
+      </div>
+      <div class="card-grid">${uncategorized.map(renderCard).join('')}</div>
+    </div>`;
+  }
+
+  return html;
+}
+
+// ── By Weekend view ──────────────────────────────────────────
+const MONTHS_LONG = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+function fmtWeekendDates(w) {
+  const s = new Date(w.start + 'T12:00:00');
+  const e = new Date(w.end   + 'T12:00:00');
+  if (w.start === w.end) {
+    return `${MONTHS[s.getMonth()]} ${s.getDate()}, 2026`;
+  }
+  if (s.getMonth() === e.getMonth()) {
+    return `${MONTHS[s.getMonth()]} ${s.getDate()}–${e.getDate()}, 2026`;
+  }
+  return `${MONTHS[s.getMonth()]} ${s.getDate()} – ${MONTHS[e.getMonth()]} ${e.getDate()}, 2026`;
+}
+
+function renderByWeekend(items, schedule) {
+  if (!schedule || !schedule.weekends || !schedule.weekends.length) {
+    return renderByUrgency(items);
+  }
+
+  const weekends = [...schedule.weekends].sort((a, b) => a.start.localeCompare(b.start));
+  // Reading bundles go into session blocks; everything else goes in gap sections
+  const isBundle  = i => i.type === 'reading_bundle';
+  const gapItems  = items.filter(i => !isBundle(i));
+  const bundleItems = items.filter(isBundle);
+
+  let html = '';
+
+  for (let wi = 0; wi < weekends.length; wi++) {
+    const w = weekends[wi];
+    const prevEnd   = wi === 0 ? null : weekends[wi - 1].end;
+    const thisStart = w.start;
+
+    // Items due strictly between previous weekend and this one
+    const gap = gapItems.filter(item => {
+      if (!item.due_at) return false;
+      const d = item.due_at.slice(0, 10);
+      const afterPrev = !prevEnd || d > prevEnd;
+      const beforeThis = d < thisStart;
+      return afterPrev && beforeThis;
+    });
+
+    if (gap.length) {
+      const fromLabel = prevEnd ? fmtDateShort(prevEnd) : 'now';
+      const toLabel   = fmtDateShort(thisStart);
+      html += `<div class="gap-section section">
+        <div class="gap-header">
+          <span class="gap-label">Due before ${toLabel}</span>
+          <span class="section-count">${gap.length} item${gap.length !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="card-grid">${gap.map(renderCard).join('')}</div>
+      </div>`;
+    }
+
+    // Weekend block
+    html += renderWeekendBlock(w, bundleItems);
+  }
+
+  // Items due after the last weekend
+  const lastEnd = weekends[weekends.length - 1].end;
+  const afterGap = gapItems.filter(item => {
+    if (!item.due_at) return false;
+    return item.due_at.slice(0, 10) > lastEnd;
+  });
+
+  if (afterGap.length) {
+    html += `<div class="gap-section section">
+      <div class="gap-header">
+        <span class="gap-label">Due after final session</span>
+        <span class="section-count">${afterGap.length} item${afterGap.length !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="card-grid">${afterGap.map(renderCard).join('')}</div>
+    </div>`;
+  }
+
+  // Undated items
+  const undated = items.filter(i => !i.due_at);
+  if (undated.length) {
+    html += `<div class="section">
+      <div class="section-header">
+        <span class="section-label label-undated">— No Due Date</span>
+        <span class="section-count">${undated.length} item${undated.length !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="card-grid">${undated.map(renderCard).join('')}</div>
+    </div>`;
+  }
+
+  return html || '<div class="empty"><div class="icon">📭</div><p>No items match your filters.</p></div>';
+}
+
+function fmtDateShort(ymd) {
+  const d = new Date(ymd + 'T12:00:00');
+  return `${MONTHS[d.getMonth()]} ${d.getDate()}`;
+}
+
+function renderWeekendBlock(w, bundleItems) {
+  const now   = new Date();
+  const endDt = new Date(w.end + 'T23:59:00');
+  const isPast = endDt < now;
+  const startDt = new Date(w.start + 'T08:00:00');
+  const diffDays = Math.round((startDt - now) / 86400000);
+
+  let countdownChip = '';
+  if (!isPast) {
+    const label = diffDays <= 0 ? 'This week' : diffDays === 1 ? 'Tomorrow' : `in ${diffDays} days`;
+    const cls   = diffDays <= 2 ? 'countdown-due_soon' : diffDays <= 7 ? 'countdown-this_week' : 'countdown-next_two_weeks';
+    countdownChip = `<span class="wh-countdown countdown ${cls}">${esc(label)}</span>`;
+  }
+
+  let daysHtml = '';
+  for (const day of (w.days || [])) {
+    let sessionsHtml = '';
+    for (const sess of (day.sessions || [])) {
+      // Find the reading bundle for this session
+      const sessBundle = bundleItems.find(b => b.session_key === sess.session_key);
+      let readingsHtml = '';
+      if (sessBundle) {
+        const rows = (sessBundle.readings_list || []).map(r => {
+          const typeCls = (r.reading_type || 'Required').toLowerCase() === 'recommended'
+            ? 'rtd-recommended' : 'rtd-required';
+          const typeLabel = r.reading_type || 'Required';
+          const titlePart = r.link
+            ? `<a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.title)}</a>`
+            : esc(r.title);
+          const pendingBadge = r.file_status === 'pending'
+            ? `<span class="reading-pending">⏳ pending upload</span>` : '';
+          return `<div class="session-reading-row">
+            <span class="reading-type-dot ${typeCls}">${esc(typeLabel)}</span>
+            <span class="reading-title-text">${titlePart}</span>
+            ${pendingBadge}
+          </div>`;
+        }).join('');
+        readingsHtml = `<div class="session-readings-list">${rows}</div>`;
+      }
+
+      sessionsHtml += `<div class="session-row">
+        <div class="session-dot" style="background:${esc(sess.color)}"></div>
+        <div class="session-content">
+          <div class="session-title">${esc(sess.title)}</div>
+          <div class="session-topic">${esc(sess.topic)}</div>
+          ${readingsHtml}
+        </div>
+      </div>`;
+    }
+
+    daysHtml += `<div class="weekend-day">
+      <div class="day-label">${esc(day.label)}</div>
+      ${sessionsHtml}
+    </div>`;
+  }
+
+  return `<div class="weekend-block${isPast ? ' past' : ''}">
+    <div class="weekend-header">
+      <span class="wh-label">${esc(w.label)}</span>
+      <span class="wh-dates">${esc(fmtWeekendDates(w))}</span>
+      ${isPast ? '<span class="wh-past-badge">Past</span>' : countdownChip}
+    </div>
+    <div class="weekend-days">${daysHtml}</div>
+  </div>`;
+}
+
+// ── Countdown refresh (every 60s) ────────────────────────────
+function refreshCountdowns() {
+  document.querySelectorAll('[data-due]').forEach(el => {
+    const iso = el.dataset.due;
+    const cd  = countdown(iso);
+    if (cd) el.textContent = cd;
+    // Update urgency class
+    const u = recomputeUrgency(iso);
+    el.className = `countdown ${urgencyClass(u)}`;
+  });
+}
+setInterval(refreshCountdowns, 60_000);
+
+// ── Controls ─────────────────────────────────────────────────
+function setGroupBy(val) {
+  state.groupBy = val;
+  localStorage.setItem('groupBy', val);
+  document.getElementById('btn-urgency').classList.toggle('active', val === 'urgency');
+  document.getElementById('btn-course').classList.toggle('active', val === 'course');
+  document.getElementById('btn-weekend').classList.toggle('active', val === 'weekend');
+  renderBoard();
+}
+
+function setFilter(val) {
+  state.filter = val;
+  localStorage.setItem('filter', val);
+  document.querySelectorAll('.chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.filter === val);
+  });
+  renderBoard();
+}
+
+// Debounced search
+let searchTimer;
+document.getElementById('search').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    state.search = e.target.value;
+    renderBoard();
+  }, 200);
+});
+
+// Restore groupBy from storage
+(function() {
+  const g = state.groupBy;
+  document.getElementById('btn-urgency').classList.toggle('active', g === 'urgency');
+  document.getElementById('btn-course').classList.toggle('active', g === 'course');
+  document.getElementById('btn-weekend').classList.toggle('active', g === 'weekend');
+  const f = state.filter;
+  document.querySelectorAll('.chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.filter === f);
+  });
+})();
+
+// ── Load data ────────────────────────────────────────────────
+async function loadData() {
+  try {
+    const resp = await fetch('./data.json?_=' + Date.now());
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    DATA = await resp.json();
+
+    document.getElementById('loading').style.display   = 'none';
+    document.getElementById('board-content').style.display = 'block';
+    renderBoard();
+  } catch(err) {
+    console.error(err);
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display   = 'block';
+  }
+}
+
+loadData();
+</script>
+</body>
+</html>

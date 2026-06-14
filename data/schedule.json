@@ -1,0 +1,147 @@
+{
+  "weekends": [
+    {
+      "id": "w1",
+      "label": "Session Weekend 1",
+      "start": "2026-06-13",
+      "end": "2026-06-14",
+      "days": [
+        {
+          "date": "2026-06-13",
+          "label": "Sat Jun 13",
+          "sessions": [
+            {
+              "session_key": "Pharma-S1",
+              "course": "Pharma",
+              "color": "#4f46e5",
+              "title": "Pharma S1 — Innovation & the Pharmaceutical Industry",
+              "topic": "Overview of pharma industry structure: R&D economics, key stakeholders, policy context"
+            },
+            {
+              "session_key": "Health Innovation-S1",
+              "course": "Health Innovation",
+              "color": "#059669",
+              "title": "Health Innovation S1 — Foundations of AI in Health",
+              "topic": "Introduction to health innovation; AI and digital health landscape"
+            }
+          ]
+        },
+        {
+          "date": "2026-06-14",
+          "label": "Sun Jun 14",
+          "sessions": [
+            {
+              "session_key": "Pharma-S2",
+              "course": "Pharma",
+              "color": "#4f46e5",
+              "title": "Pharma S2 — Drug Development & Regulatory Pathways",
+              "topic": "Clinical trials, FDA approval process, patent cliffs, generic entry"
+            },
+            {
+              "session_key": "Health Innovation-S2",
+              "course": "Health Innovation",
+              "color": "#059669",
+              "title": "Health Innovation S2 — AI Tools & Healthcare Data",
+              "topic": "Group formation; AI tools in clinical settings; data types and governance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w2",
+      "label": "Mid-Summer Block",
+      "start": "2026-07-09",
+      "end": "2026-07-12",
+      "days": [
+        {
+          "date": "2026-07-09",
+          "label": "Thu Jul 9",
+          "sessions": [
+            {
+              "session_key": "Health Innovation-S3",
+              "course": "Health Innovation",
+              "color": "#059669",
+              "title": "Health Innovation S3",
+              "topic": "Details TBD — check Canvas Modules for pre-work"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-10",
+          "label": "Fri Jul 10",
+          "sessions": [
+            {
+              "session_key": "EXEC-APEx",
+              "course": "EXEC/Grad",
+              "color": "#d97706",
+              "title": "APEx Presentations (in person)",
+              "topic": "Cohort presents Applied Practice Experience capstone projects"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-11",
+          "label": "Sat Jul 11",
+          "sessions": [
+            {
+              "session_key": "Pharma-S5",
+              "course": "Pharma",
+              "color": "#4f46e5",
+              "title": "Pharma S5 — Commercialization, Marketing & Public Trust",
+              "topic": "Direct-to-consumer advertising, marketing ethics, public trust in pharma — Policy Memo assigned"
+            },
+            {
+              "session_key": "Health Innovation-S4",
+              "course": "Health Innovation",
+              "color": "#059669",
+              "title": "Health Innovation S4",
+              "topic": "Details TBD — check Canvas Modules for pre-work"
+            }
+          ]
+        },
+        {
+          "date": "2026-07-12",
+          "label": "Sun Jul 12",
+          "sessions": [
+            {
+              "session_key": "Pharma-S6",
+              "course": "Pharma",
+              "color": "#4f46e5",
+              "title": "Pharma S6 — Ethics, Equity & the Future of Pharma",
+              "topic": "High drug costs, AI in drug discovery, gene therapy pricing, global equity — Final Synthesis Paper assigned"
+            },
+            {
+              "session_key": "Health Innovation-S5",
+              "course": "Health Innovation",
+              "color": "#059669",
+              "title": "Health Innovation S5",
+              "topic": "Details TBD — check Canvas Modules for pre-work"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w3",
+      "label": "Final Session",
+      "start": "2026-08-13",
+      "end": "2026-08-13",
+      "days": [
+        {
+          "date": "2026-08-13",
+          "label": "Thu Aug 13",
+          "sessions": [
+            {
+              "session_key": "Health Innovation-S6",
+              "course": "Health Innovation",
+              "color": "#059669",
+              "title": "Health Innovation S6 — Final Presentations & Demo",
+              "topic": "Teams present AI-enabled healthcare solutions before executive panel"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

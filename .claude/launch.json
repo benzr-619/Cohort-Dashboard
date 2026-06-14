@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "deadline-board",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-e", "const h=require('http'),fs=require('fs'),path=require('path');h.createServer((q,r)=>{let f=path.join('docs',q.url==='/'?'index.html':q.url.split('?')[0]);try{r.end(fs.readFileSync(f));}catch(e){r.writeHead(404);r.end('Not found');}}).listen(4321,()=>console.log('Ready'));"],
+      "port": 4321
+    }
+  ]
+}

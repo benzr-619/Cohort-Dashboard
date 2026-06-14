@@ -1,0 +1,706 @@
+{
+  "generated_at": "2026-06-14T13:56:07.500779-04:00",
+  "items": [
+    {
+      "id": "canvas-246952-1668520",
+      "title": "Problem Canvas (from AI Lab #1) ",
+      "course_short": "Health Innovation",
+      "course_id": 246952,
+      "course_name": "Health Innovation & Technology (P8536)",
+      "course_color": "#059669",
+      "course_bg": "#dcfce7",
+      "due_at": "2026-06-13T13:00:00Z",
+      "lock_at": "2026-06-15T03:59:59Z",
+      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1668520",
+      "points": 100.0,
+      "weight": null,
+      "details_html": "<p>Review the materials from the first AI Lab and submit your 1-page canvas here. Please have this done before the first class (Saturday, June 13 at 9:00 am). Feel free to reach out with any questions:\u00a0</p>\n<p><span><a href=\"mailto:ykogan@northwell.edu\" target=\"_blank\" rel=\"noopener noreferrer\">ykogan@northwell.edu</a> or <a href=\"mailto:amm2645@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">amm2645@cumc.columbia.edu</a></span></p>\n<p>\u00a0</p>",
+      "type": "assignment",
+      "category": "Health Innovation",
+      "source": "canvas",
+      "urgency": "overdue",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/246952/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-246952-1669698",
+      "title": "Problem Canvas & Plan",
+      "course_short": "Health Innovation",
+      "course_id": 246952,
+      "course_name": "Health Innovation & Technology (P8536)",
+      "course_color": "#059669",
+      "course_bg": "#dcfce7",
+      "due_at": "2026-06-15T13:00:00Z",
+      "lock_at": "2026-06-16T03:59:59Z",
+      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1669698",
+      "points": 100.0,
+      "weight": null,
+      "details_html": "<p>Feel free to reach out with any questions:\u00a0</p>\n<p><span><a href=\"mailto:ykogan@northwell.edu\" target=\"_blank\" rel=\"noopener noreferrer\">ykogan@northwell.edu</a> or <a href=\"mailto:amm2645@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">amm2645@cumc.columbia.edu</a></span></p>\n<p>\u00a0</p>",
+      "type": "assignment",
+      "category": "Health Innovation",
+      "source": "canvas",
+      "urgency": "due_soon",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/246952/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-246952-1661641",
+      "title": "Session 1 Reflection: Health IT Overview (June 26)",
+      "course_short": "Health Innovation",
+      "course_id": 246952,
+      "course_name": "Health Innovation & Technology (P8536)",
+      "course_color": "#059669",
+      "course_bg": "#dcfce7",
+      "due_at": "2026-06-16T03:59:59Z",
+      "lock_at": "2026-06-16T13:00:00Z",
+      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1661641",
+      "points": 1.0,
+      "weight": "~1 pt",
+      "details_html": "",
+      "type": "assignment",
+      "category": "Health Innovation",
+      "source": "canvas",
+      "urgency": "due_soon",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/246952/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-249500-1651829",
+      "title": "Strategic Company Evaluation",
+      "course_short": "Pharma",
+      "course_id": 249500,
+      "course_name": "The Pharmaceutical Industry (P8237)",
+      "course_color": "#4f46e5",
+      "course_bg": "#ede9fe",
+      "due_at": "2026-06-24T03:59:00Z",
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651829",
+      "points": 20.0,
+      "weight": "20%",
+      "details_html": "<p><strong>ASSIGNMENT</strong></p>\n<p>2\u20133 page applied analysis evaluating how a pharmaceutical company or comparable stakeholder navigates a key strategic challenge related to innovation, access, pricing, or commercialization. Students may select a case discussed in class or a comparable real-world example. The assignment should identify the core challenge, analyze key tradeoffs, and present a clear recommendation.\u00a0</p>\n<p><strong>RUBRIC</strong></p>\n<table>\n<thead>\n<tr>\n<th>Criteria</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Strategic challenge</strong>: Clearly identifies a relevant challenge related to innovation, access, pricing, or commercialization, and explains why it matters.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Company or stakeholder response</strong>: Describes how the pharmaceutical company or comparable stakeholder navigated the challenge, including key decisions, constraints, or pressures.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Strategic analysis</strong>: Goes beyond summary to analyze the tradeoffs, risks, stakeholder tensions, and consequences of the choices made.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Evaluation and judgment</strong>: Offers a clear point of view on the effectiveness of the response, including what worked, what did not, and/or what could have been done differently.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Use of evidence and writing quality</strong>: Uses relevant evidence from class materials, readings, discussion, or real-world context. Writing is clear, organized, concise, and appropriate for a 2\u20133 page applied analysis.</td>\n<td><strong>4</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>SUBMISSION GUIDELINES</strong></p>\n<ul>\n<li><span>12-point Times New Roman or similar readable font</span></li>\n<li><span>Double spacing</span></li>\n<li><span>1-inch margins</span></li>\n<li><span>Page numbers</span></li>\n<li><span>A clear title</span></li>\n<li><span>In-text citations or footnotes\u00a0</span></li>\n<li><span>A short reference list at the end (does not count toward page limit)</span></li>\n<li><span>Naming convention: LastName_FirstName_StrategicCompanyEvaluation</span></li>\n</ul>\n<p><span>NOTE: Lecture notes and class slides should not be used as cited sources. If you want to reference an idea discussed in class, cite the assigned case, reading, article, report, or other original source that supports the point.</span></p>",
+      "type": "assignment",
+      "category": "Pharma",
+      "source": "canvas",
+      "urgency": "next_two_weeks",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/249500/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/249500/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-47471-1637386-summary",
+      "title": "APEx: Executive Summary (Final)",
+      "course_short": "EXEC/Grad",
+      "course_id": 47471,
+      "course_name": "EXEC Program \u2014 Graduation Requirements",
+      "course_color": "#d97706",
+      "course_bg": "#fef3c7",
+      "due_at": "2026-07-02T03:59:59Z",
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/47471/assignments/1637386",
+      "points": 0.0,
+      "weight": null,
+      "details_html": "<p><strong>Details:\u00a0</strong></p>\n<p>Students must submit an Executive Summary (Final) + Peer Review (of your Executive Summary Draft) of their APEx. The objective of the Executive Summary is to provide an overview of the APEx organization and projects, and to describe and analyze the challenges faced and proposed solutions. Executive Summaries are compiled into an anthology and distributed in advance of APEx Forum, in order to prepare participants and facilitators for breakout group discussions. The summary will also serve as the foundation for students\u2019 APEx Forum slide presentations.</p>\n<p>Executive Summary Drafts will go through a Peer Review prior to being submitted to the department. Your assigned Peer Reviewer can be found <a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988702?verifier=1xKno9X03eErRfHqefwHDsHYINDsvyLPpsZb4Dpi&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>. The department\u2019s expectation is that peer reviewers will meet to discuss reviewer comments in the rubric. Your peer is expected to return their Peer Review Rubric to you via email no later than 11:59pm Sunday, June 28. You are expected to review and incorporate their notes into your Executive Summary (Final) and upload the Executive Summary (Final) + their Peer Review (of your Executive Summary Draft) documents by 11:59pm Wednesday, July 1.</p>\n<p>\u00a0</p>\n<p><strong>Assignment Instructions:</strong></p>\n<p>Executive Summary Instructions<strong> <a href=\"https://courseworks2.columbia.edu/courses/47471/files/27019919?verifier=8io0m0qzGR7lcD8jRoOkYQrrpUEqwF8fU1AhRHJF&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">here</a></strong></p>\n<p>Executive Summary (Final) Samples: <strong><a href=\"https://courseworks2.columbia.edu/courses/47471/files/23606847?verifier=FpcxzYlSRFKEEdJeqQ3u6NXAxdLL0lR15zqJGiqm&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">One</a>, <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23606848?verifier=8dXb9oJ7xe3QDofj1QMgv0nue5CzqjB5W3JWzPXj&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">Two</a></strong></p>\n<p>Peer Review Rubric<strong>: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/19742606?verifier=J8fRJCYZGJlMa3rmbyuQrPrEUtc4IDR0ONEL9EZK&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">Rubric for Executive Summary Peer Review</a></strong></p>\n<p>\u00a0</p>\n<p><span><strong>Please see below for submission instructions:</strong></span></p>\n<ul>\n<li>Students must submit their Executive Summary along with the completed rubric received from their peer reviewer.</li>\n<li>Executive Summaries and Peer Review Rubrics must be uploaded separately.</li>\n<li><strong>Executive Summary Files must be uploaded as word documents</strong>. Peer Reviews may be uploaded as PDFs.\u00a0</li>\n<li>Executive Summaries must use the following file name: Last Name, First Name Executive Summary</li>\n<li>Peer Review Rubrics must use the following file name: Last Name, First Name Peer Review Rubrics</li>\n<li>Students must submit their<span> <strong>Executive Summary (Final) </strong>+ <strong>Peer Review (of your Executive Summary Draft)</strong> documents <strong>by</strong> <strong>11:59pm Wednesday, July 1</strong>.</span></li>\n</ul>",
+      "type": "assignment",
+      "category": "EXEC/Grad",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/47471/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/47471/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-47471-1637386-peer-review",
+      "title": "APEx: Peer Review",
+      "course_short": "EXEC/Grad",
+      "course_id": 47471,
+      "course_name": "EXEC Program \u2014 Graduation Requirements",
+      "course_color": "#d97706",
+      "course_bg": "#fef3c7",
+      "due_at": "2026-07-02T03:59:59Z",
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/47471/assignments/1637386",
+      "points": 0.0,
+      "weight": null,
+      "details_html": "<p>Complete a structured peer review of a classmate's APEx Executive Summary. Reviewer assignments are made by program staff \u2014 check your Canvas inbox or the EXEC shell for your assigned peer.</p>",
+      "type": "assignment",
+      "category": "EXEC/Grad",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/47471/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/47471/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-47471-1637387",
+      "title": "2026 APEx Deliverables: Presentation Slide Deck",
+      "course_short": "EXEC/Grad",
+      "course_id": 47471,
+      "course_name": "EXEC Program \u2014 Graduation Requirements",
+      "course_color": "#d97706",
+      "course_bg": "#fef3c7",
+      "due_at": "2026-07-09T03:59:59Z",
+      "lock_at": "2026-07-16T03:59:59Z",
+      "link": "https://courseworks2.columbia.edu/courses/47471/assignments/1637387",
+      "points": 0.0,
+      "weight": null,
+      "details_html": "<p><strong>Details:\u00a0</strong></p>\n<p>Students must submit their <strong>APEx Presentation Slide Deck</strong> <strong>by 5pm on Wednesday, July 8</strong>. All files are saved in the student's file for program accreditation.</p>",
+      "type": "assignment",
+      "category": "EXEC/Grad",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/47471/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/47471/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "bundle-pharma-s5",
+      "title": "Pharma S5 \u2014 Readings",
+      "course_short": "Pharma",
+      "course_id": 249500,
+      "course_name": "Pharma",
+      "course_color": "#4f46e5",
+      "course_bg": "#ede9fe",
+      "due_at": "2026-07-11T08:00:00-04:00",
+      "lock_at": null,
+      "link": null,
+      "points": null,
+      "weight": null,
+      "details_html": "<p><strong>Required Readings</strong></p><ul><li>Weinmeyer \u2014 Direct-to-Consumer Advertising of Drugs <span class=\"reading-detail\">\u2014 AMA Journal of Ethics, 2013. Examines the ethics and regulatory history of DTCA in the US, including the 1997 FDA guidance shift that opened TV advertising.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-11 class date.</div></li><li>Kellogg case: Crestor (KEL245) <span class=\"reading-detail\">\u2014 Kellogg School case KEL245. AstraZeneca's Crestor statin \u2014 case study in pharmaceutical marketing strategy, competitive positioning, and physician-directed vs. consumer-directed promotion.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-11 class date.</div></li></ul><p><strong>Recommended Readings</strong></p><ul><li>Owermohle \u2014 Trump Crackdown on Pharma Advertising <span class=\"reading-detail\">\u2014 Politico, Sep 2025. On proposed new federal restrictions on pharmaceutical advertising and the industry response.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-11 class date.</div></li></ul>",
+      "type": "reading_bundle",
+      "session_key": "Pharma-S5",
+      "file_status": "pending",
+      "category": "Pharma",
+      "source": "syllabus",
+      "urgency": "later",
+      "syllabus_url": null,
+      "readings_list": [
+        {
+          "title": "Weinmeyer \u2014 Direct-to-Consumer Advertising of Drugs",
+          "reading_type": "Required",
+          "link": null,
+          "file_status": "pending"
+        },
+        {
+          "title": "Kellogg case: Crestor (KEL245)",
+          "reading_type": "Required",
+          "link": null,
+          "file_status": "pending"
+        },
+        {
+          "title": "Owermohle \u2014 Trump Crackdown on Pharma Advertising",
+          "reading_type": "Recommended",
+          "link": null,
+          "file_status": "pending"
+        }
+      ],
+      "readings": [],
+      "files": [],
+      "groups": []
+    },
+    {
+      "id": "bundle-pharma-s6",
+      "title": "Pharma S6 \u2014 Readings",
+      "course_short": "Pharma",
+      "course_id": 249500,
+      "course_name": "Pharma",
+      "course_color": "#4f46e5",
+      "course_bg": "#ede9fe",
+      "due_at": "2026-07-12T08:00:00-04:00",
+      "lock_at": null,
+      "link": null,
+      "points": null,
+      "weight": null,
+      "details_html": "<p><strong>Required Readings</strong></p><ul><li>Kesselheim, Avorn & Sarpatwari \u2014 The High Cost of Prescription Drugs in the US <span class=\"reading-detail\">\u2014 JAMA, 2016. Comprehensive analysis of the structural and policy forces driving high drug prices in the US healthcare system. One of the most-cited papers in the field.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-12 class date.</div></li><li>Brazil \u2014 How AI Is Transforming Drug Discovery <span class=\"reading-detail\">\u2014 The Pharmaceutical Journal, 2024. Overview of current AI applications in drug discovery, target identification, and clinical trial design.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-12 class date.</div></li><li>HBS case: Spark Therapeutics (818059) <span class=\"reading-detail\">\u2014 Harvard Business School case 818059. Spark Therapeutics and the launch of Luxturna, the first FDA-approved gene therapy \u2014 examines pricing, value-based payment models, and stakeholder reactions.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-12 class date.</div></li></ul><p><strong>Recommended Readings</strong></p><ul><li>Kenney & Gleason \u2014 2024 AMCP Payment Model Survey <span class=\"reading-detail\">\u2014 Journal of Managed Care & Specialty Pharmacy, 2025. Survey of evolving outcomes-based and value-based payment models for specialty and gene therapy drugs.</span><div class=\"pending-callout\">\u23f3 <strong>File not yet uploaded to Canvas.</strong> Check course Modules closer to the 2026-07-12 class date.</div></li></ul>",
+      "type": "reading_bundle",
+      "session_key": "Pharma-S6",
+      "file_status": "pending",
+      "category": "Pharma",
+      "source": "syllabus",
+      "urgency": "later",
+      "syllabus_url": null,
+      "readings_list": [
+        {
+          "title": "Kesselheim, Avorn & Sarpatwari \u2014 The High Cost of Prescription Drugs in the US",
+          "reading_type": "Required",
+          "link": null,
+          "file_status": "pending"
+        },
+        {
+          "title": "Brazil \u2014 How AI Is Transforming Drug Discovery",
+          "reading_type": "Required",
+          "link": null,
+          "file_status": "pending"
+        },
+        {
+          "title": "HBS case: Spark Therapeutics (818059)",
+          "reading_type": "Required",
+          "link": null,
+          "file_status": "pending"
+        },
+        {
+          "title": "Kenney & Gleason \u2014 2024 AMCP Payment Model Survey",
+          "reading_type": "Recommended",
+          "link": null,
+          "file_status": "pending"
+        }
+      ],
+      "readings": [],
+      "files": [],
+      "groups": []
+    },
+    {
+      "id": "canvas-47471-1639256",
+      "title": "2026 APEx Deliverables: Work Deliverables",
+      "course_short": "EXEC/Grad",
+      "course_id": 47471,
+      "course_name": "EXEC Program \u2014 Graduation Requirements",
+      "course_color": "#d97706",
+      "course_bg": "#fef3c7",
+      "due_at": "2026-07-13T03:59:59Z",
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/47471/assignments/1639256",
+      "points": 0.0,
+      "weight": null,
+      "details_html": "<p><strong>Details:\u00a0</strong></p>\n<p>Students must submit their <strong>APEx Work Deliverables</strong> <strong>by 11:59pm on Sunday, July 12</strong>. All files are saved in the student's file for program accreditation.</p>",
+      "type": "assignment",
+      "category": "EXEC/Grad",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/47471/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/47471/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-249500-1651830",
+      "title": "Policy Memo",
+      "course_short": "Pharma",
+      "course_id": 249500,
+      "course_name": "The Pharmaceutical Industry (P8237)",
+      "course_color": "#4f46e5",
+      "course_bg": "#ede9fe",
+      "due_at": "2026-07-20T03:59:00Z",
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651830",
+      "points": 25.0,
+      "weight": "25%",
+      "details_html": "",
+      "type": "assignment",
+      "category": "Pharma",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/249500/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/249500/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-249500-1651828",
+      "title": "Final Synthesis Paper",
+      "course_short": "Pharma",
+      "course_id": 249500,
+      "course_name": "The Pharmaceutical Industry (P8237)",
+      "course_color": "#4f46e5",
+      "course_bg": "#ede9fe",
+      "due_at": "2026-08-01T03:59:59Z",
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651828",
+      "points": 40.0,
+      "weight": "40%",
+      "details_html": "",
+      "type": "assignment",
+      "category": "Pharma",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/249500/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/249500/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-47471-1637292",
+      "title": "ILE Culminating Paper 2026",
+      "course_short": "EXEC/Grad",
+      "course_id": 47471,
+      "course_name": "EXEC Program \u2014 Graduation Requirements",
+      "course_color": "#d97706",
+      "course_bg": "#fef3c7",
+      "due_at": "2026-08-10T03:59:00Z",
+      "lock_at": "2026-11-01T03:59:59Z",
+      "link": "https://courseworks2.columbia.edu/courses/47471/assignments/1637292",
+      "points": 0.0,
+      "weight": null,
+      "details_html": "<p>\u00a0</p>\n<p><strong>\u00a0</strong></p>\n<p><strong>Integrative Learning Experience (ILE)</strong></p>\n<p>The Council on Education for Public Health (CEPH) requires that all MPH students complete an Integrative Learning Experience (ILE).</p>\n<p><br>In the Department of Health Policy & Management (HPM) at Columbia University Mailman School of Public Health, students complete a five-page culminating paper near the end of their program of study. The paper is an opportunity for students to demonstrate their ability to synthesize program competencies and apply them to address complex public health and health systems problems.</p>\n<p>\u00a0</p>\n<p>Students will choose one of two formats to fulfill the ILE requirement: (1) a policy proposal or (2) a business proposal. ILE papers are reviewed and approved by the student\u2019s Faculty Advisor. The writing assignment is an opportunity for students to demonstrate their understanding of public health principles and practices, critical thinking skills, and the application of theoretical knowledge to real-world scenarios.</p>\n<ul>\n<li>This paper must be submitted to Canvas by August 9, 2026.</li>\n<li>Your paper should have a minimum of five pages and a maximum 10 pages of prose.</li>\n<li>Unlimited graphical exhibits are allowed and should be included at the end of the paper (after the endnotes and bibliography)\n<ol>\n<li>All exhibits must be referenced, in numerical order, in the prose.</li>\n</ol>\n</li>\n<li>Papers should be double-spaced, 12-point font, one-inch margins.</li>\n<li>Your paper will be graded by your Faculty Advisor.</li>\n<li>A rubric has been uploaded to Canvas, against which you will be graded. You must Meet Expectations in all criteria to satisfy this requirement and pass. You will be notified in writing if your paper is awarded Distinction. Any paper that does not Meet Expectations will require resubmission that addresses all faculty comments. Papers should be resubmitted within 48 hours of notification.</li>\n<li>Students may use AI tools to generate preliminary ideas and to conduct broad research around a topic. When doing so, it is mandatory for the student to declare the use of AI in their Works Cited or Bibliography. The verbatim use of AI-generated material or the use of AI-generated material with cursory semantic change is not permitted. You are responsible for all facts and citations within your work. The expectation is that the submitted work is original and is produced independently. You may not resubmit a paper that has been previously graded at Columbia University.</li>\n<li>Please contact your Faculty Advisor or Casey Malone (<a href=\"mailto:cm3926@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">cm3926@cumc.columbia.edu</a>) with any questions.</li>\n</ul>\n<p>\u00a0</p>\n<p>Example papers for Business Plan: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23759677?verifier=23364mpgKixfMRhiHJL2WwcztkWQajtK1Ie6vOZE&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan sample 1.pdf</a> \u00a0 <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23760884?verifier=jImqnuJqRl3HZFPgzASjlmNOyPX2nbmusKlYwaAj&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan Sample 2.pdf</a> \u00a0<a href=\"https://courseworks2.columbia.edu/courses/47471/files/23760883?verifier=pkMMDWgBpgiB3L8ffl45VPcCMD1GmbqSY1i37Dez&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan Sample 3.pdf\u00a0</a></p>\n<p>Example papers for Policy Proposal: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988698?verifier=SVelbNK3u4uEwIp7j30TrjO05pqVso7Xl2PgVnQm&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE Paper Example 1.pdf</a> \u00a0<a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988697?verifier=T7McNZ3Gql9MfRaCHCD757K1ICNM1i0TzLIyNh79&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE Paper Example 4 (Policy).pdf</a></p>\n<p>\u00a0</p>\n<p><strong>PAPER FORMATS</strong></p>\n<p>\u00a0</p>\n<p><strong>(1) Policy Proposal</strong></p>\n<p>\u00a0</p>\n<p>The policy proposal should include the following elements:</p>\n<ul>\n<li>Topic: Policy Question: What question will you examine in this proposal?</li>\n<li>Executive Summary/Abstract (1/2 pg. max, 150 words)</li>\n<li>What is the current problem the policy is aiming to address?\n<ul>\n<li>Historical background</li>\n<li>Context</li>\n</ul>\n</li>\n<li>What are some possible solutions to this problem?\n<ul>\n<li>Pros and cons of each</li>\n</ul>\n</li>\n<li>Proposed Policy: What policy do you think is the best approach?</li>\n<li>Evidence in Support\n<ul>\n<li>Why is this policy better than the alternatives?</li>\n<li>Include an example to explain reasoning for why this is the best policy.</li>\n<li>What data/evidence supports your proposal?</li>\n</ul>\n</li>\n<li>Politics of Policy\n<ul>\n<li>What is the political landscape surrounding this problem?</li>\n<li>What social groups would be affected by this policy?</li>\n<li>What other groups might get involved? (Non-profits? Political entities? Religious groups?)</li>\n<li>Cost</li>\n<li>Ideological arguments</li>\n<li>Other considerations</li>\n</ul>\n</li>\n<li>Implementation\n<ul>\n<li>How will this be executed?</li>\n</ul>\n</li>\n</ul>\n<p>\u00a0</p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>(2) Business Proposal (Strategic Plan, Program Plan, Project Design)</strong></p>\n<p>\u00a0</p>\n<p>The Proposal should include the following elements:</p>\n<ul>\n<li>Executive Summary (max one page)\n<ul>\n<li>What is the problem or opportunity you are trying to address?</li>\n<li>Key innovative concept you are proposing</li>\n</ul>\n</li>\n<li>Environment/Market\n<ul>\n<li>Who are the key stakeholders?</li>\n<li>What are the important needs/wants of these stakeholders, e.g. unmet user/patient needs, underserved markets, regulatory restrictions, intense competition (perhaps from a new market disruptor)?</li>\n<li>How \u201cbig\u201d is the market or population you intend to serve? Quantify the total need, the share of the population that is currently served in some way, and the un- or under-served segments you intend to focus on.</li>\n</ul>\n</li>\n<li>Given the items above, how will you address the need?\n<ul>\n<li>What options are available to you? (Discuss a minimum of two options)</li>\n<li>What is your recommendation and why? (Based on what criteria?)</li>\n<li>What metrics and targets will you measure to ensure success? (What can you measure to indicate progress or impact?)</li>\n<li>What short-, medium-, and long-term implementation steps are required to achieve key targets?</li>\n<li>What resources\u2014budget, staffing, coordination, alliances, partnerships, etc.\u2014are needed to ensure success?</li>\n<li>What risks\u2014and mitigating factors\u2014need to be considered given your proposed course of action?</li>\n</ul>\n</li>\n</ul>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>ILE Culminating Paper Rubric for EXEC Students</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Requirement</strong></p>\n</td>\n<td>\n<p><strong>Exceeds Mastery (3 points)</strong></p>\n</td>\n<td>\n<p><strong>Meets Mastery </strong></p>\n<p><strong>(2 points)</strong></p>\n</td>\n<td>\n<p><strong>Near Mastery </strong></p>\n<p><strong>(1 point)</strong></p>\n</td>\n<td>\n<p><strong>Well Below Mastery </strong></p>\n<p><strong>(0 points)</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing skills: Organization</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The paper follows the template, communicates ideas effectively, and presents ideas clearly.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Paper is disorganized and does not include all elements of the template.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing sills: Fundamentals</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Polished grammar, syntax, and mechanics.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Poor grammar, syntax, and mechanics.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing skills: Tone</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The paper has a professional tone appropriate to the expected audience. The case made is persuasive.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The tone is unprofessional or inappropriate to the expected audience. The case is not made or is not persuasive.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Interpret results of data analysis for public health research, policy, or practice.</p>\n</td>\n<td>\n<p>Demonstrates a sophisticated interpretation of relevant data, including evidence that both supports and challenges the proposed recommendation. Data are analyzed (not merely described), clearly linked to the policy or strategic decision, and used persuasively to justify the chosen course of action.</p>\n</td>\n<td>\n<p>The paper includes appropriate and accurate analysis of relevant data that is clearly connected to and supports the proposed policy initiative or business plan. Data interpretations are sound, though analysis may focus primarily on supporting evidence.</p>\n</td>\n<td>\n<p>Data are included, but analysis is limited, descriptive, or superficial. Interpretations are weak or inconsistently connected to the policy proposal or strategic plan.</p>\n</td>\n<td>\n<p>Data are absent, inaccurately interpreted, or not meaningfully connected to the policy proposal or strategic plan.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Propose strategies to identify stakeholders and build coalitions and partnerships for influencing public health outcomes.</p>\n</td>\n<td>\n<p>Presents a comprehensive analysis of existing and potential stakeholders, including their interests, influence, and roles. It proposes a clear, innovative, and well-justified plan for engaging key partners and building coalitions that are likely to influence public health outcomes and advance the proposed initiative.</p>\n</td>\n<td>\n<p>Includes a thoughtful and appropriate plan to identify key stakeholders and build coalitions or partnerships relevant to the proposed policy or strategic plan. Strategies are feasible and aligned with the intended public health outcomes.</p>\n</td>\n<td>\n<p>Stakeholder or coalition strategies are included but lack sufficient detail, strategic rationale, or clear connection to the proposed initiative or public health outcomes.</p>\n</td>\n<td>\n<p>Strategies for identifying stakeholders or building coalitions are absent, unclear, or inappropriate. Key populations, partners, or sectors are overlooked or inadequately addressed.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Apply fundamental principles of research methods and data management to develop and synthesize research questions in health policy and management.</p>\n</td>\n<td>\n<p>Demonstrates rigorous and well-integrated application of appropriate research methods and data management principles. Data analysis is thorough, methodologically sound, and clearly aligned with the research question, persuasively demonstrating that the proposed policy or management approach is well founded.</p>\n</td>\n<td>\n<p>Applies appropriate research methods and data management principles clearly and correctly to address the stated research question. Data analysis is coherent and supports the inquiry, though methodological justification or integration may be limited.</p>\n</td>\n<td>\n<p>Application of research methods and data management principles is uneven, fragmented, or superficial. Data analysis is limited or inconsistently connected to the research question.</p>\n</td>\n<td>\n<p>Research methods and data management principles are absent, unclear, or incorrectly applied. The research question is poorly defined or not meaningfully addressed through analysis.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>\u00a0</p>\n<p>\u00a0</p>",
+      "type": "assignment",
+      "category": "EXEC/Grad",
+      "source": "canvas",
+      "urgency": "later",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/47471/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/47471/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": "canvas-249500-1651825",
+      "title": "Class Participation",
+      "course_short": "Pharma",
+      "course_id": 249500,
+      "course_name": "The Pharmaceutical Industry (P8237)",
+      "course_color": "#4f46e5",
+      "course_bg": "#ede9fe",
+      "due_at": null,
+      "lock_at": null,
+      "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651825",
+      "points": 15.0,
+      "weight": "15%",
+      "details_html": "",
+      "type": "assignment",
+      "category": "Pharma",
+      "source": "canvas",
+      "urgency": "undated",
+      "syllabus_url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus",
+      "readings": [],
+      "files": [
+        {
+          "name": "Course Modules",
+          "url": "https://courseworks2.columbia.edu/courses/249500/modules"
+        },
+        {
+          "name": "Course Files",
+          "url": "https://courseworks2.columbia.edu/courses/249500/files"
+        },
+        {
+          "name": "Syllabus",
+          "url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus"
+        }
+      ],
+      "groups": []
+    }
+  ],
+  "courses": {
+    "249500": {
+      "short": "Pharma",
+      "name": "The Pharmaceutical Industry (P8237)",
+      "color": "#4f46e5",
+      "bg": "#ede9fe"
+    },
+    "246952": {
+      "short": "Health Innovation",
+      "name": "Health Innovation & Technology (P8536)",
+      "color": "#059669",
+      "bg": "#dcfce7"
+    },
+    "47471": {
+      "short": "EXEC/Grad",
+      "name": "EXEC Program \u2014 Graduation Requirements",
+      "color": "#d97706",
+      "bg": "#fef3c7"
+    },
+    "247383": {
+      "short": "Simulation",
+      "name": "Health System Simulation (P8556)",
+      "color": "#6b7280",
+      "bg": "#f3f4f6"
+    }
+  },
+  "schedule": {
+    "weekends": [
+      {
+        "id": "w1",
+        "label": "Session Weekend 1",
+        "start": "2026-06-13",
+        "end": "2026-06-14",
+        "days": [
+          {
+            "date": "2026-06-13",
+            "label": "Sat Jun 13",
+            "sessions": [
+              {
+                "session_key": "Pharma-S1",
+                "course": "Pharma",
+                "color": "#4f46e5",
+                "title": "Pharma S1 \u2014 Innovation & the Pharmaceutical Industry",
+                "topic": "Overview of pharma industry structure: R&D economics, key stakeholders, policy context"
+              },
+              {
+                "session_key": "Health Innovation-S1",
+                "course": "Health Innovation",
+                "color": "#059669",
+                "title": "Health Innovation S1 \u2014 Foundations of AI in Health",
+                "topic": "Introduction to health innovation; AI and digital health landscape"
+              }
+            ]
+          },
+          {
+            "date": "2026-06-14",
+            "label": "Sun Jun 14",
+            "sessions": [
+              {
+                "session_key": "Pharma-S2",
+                "course": "Pharma",
+                "color": "#4f46e5",
+                "title": "Pharma S2 \u2014 Drug Development & Regulatory Pathways",
+                "topic": "Clinical trials, FDA approval process, patent cliffs, generic entry"
+              },
+              {
+                "session_key": "Health Innovation-S2",
+                "course": "Health Innovation",
+                "color": "#059669",
+                "title": "Health Innovation S2 \u2014 AI Tools & Healthcare Data",
+                "topic": "Group formation; AI tools in clinical settings; data types and governance"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "w2",
+        "label": "Mid-Summer Block",
+        "start": "2026-07-09",
+        "end": "2026-07-12",
+        "days": [
+          {
+            "date": "2026-07-09",
+            "label": "Thu Jul 9",
+            "sessions": [
+              {
+                "session_key": "Health Innovation-S3",
+                "course": "Health Innovation",
+                "color": "#059669",
+                "title": "Health Innovation S3",
+                "topic": "Details TBD \u2014 check Canvas Modules for pre-work"
+              }
+            ]
+          },
+          {
+            "date": "2026-07-10",
+            "label": "Fri Jul 10",
+            "sessions": [
+              {
+                "session_key": "EXEC-APEx",
+                "course": "EXEC/Grad",
+                "color": "#d97706",
+                "title": "APEx Presentations (in person)",
+                "topic": "Cohort presents Applied Practice Experience capstone projects"
+              }
+            ]
+          },
+          {
+            "date": "2026-07-11",
+            "label": "Sat Jul 11",
+            "sessions": [
+              {
+                "session_key": "Pharma-S5",
+                "course": "Pharma",
+                "color": "#4f46e5",
+                "title": "Pharma S5 \u2014 Commercialization, Marketing & Public Trust",
+                "topic": "Direct-to-consumer advertising, marketing ethics, public trust in pharma \u2014 Policy Memo assigned"
+              },
+              {
+                "session_key": "Health Innovation-S4",
+                "course": "Health Innovation",
+                "color": "#059669",
+                "title": "Health Innovation S4",
+                "topic": "Details TBD \u2014 check Canvas Modules for pre-work"
+              }
+            ]
+          },
+          {
+            "date": "2026-07-12",
+            "label": "Sun Jul 12",
+            "sessions": [
+              {
+                "session_key": "Pharma-S6",
+                "course": "Pharma",
+                "color": "#4f46e5",
+                "title": "Pharma S6 \u2014 Ethics, Equity & the Future of Pharma",
+                "topic": "High drug costs, AI in drug discovery, gene therapy pricing, global equity \u2014 Final Synthesis Paper assigned"
+              },
+              {
+                "session_key": "Health Innovation-S5",
+                "course": "Health Innovation",
+                "color": "#059669",
+                "title": "Health Innovation S5",
+                "topic": "Details TBD \u2014 check Canvas Modules for pre-work"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "w3",
+        "label": "Final Session",
+        "start": "2026-08-13",
+        "end": "2026-08-13",
+        "days": [
+          {
+            "date": "2026-08-13",
+            "label": "Thu Aug 13",
+            "sessions": [
+              {
+                "session_key": "Health Innovation-S6",
+                "course": "Health Innovation",
+                "color": "#059669",
+                "title": "Health Innovation S6 \u2014 Final Presentations & Demo",
+                "topic": "Teams present AI-enabled healthcare solutions before executive panel"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
