@@ -1,78 +1,6 @@
 {
-  "generated_at": "2026-06-16T14:04:45.522815-04:00",
+  "generated_at": "2026-06-30T19:40:12.421792-04:00",
   "items": [
-    {
-      "id": "canvas-246952-1669698",
-      "title": "Problem Canvas & Plan (Task #1)",
-      "course_short": "Health Innovation",
-      "course_id": 246952,
-      "course_name": "Health Innovation & Technology (P8536)",
-      "course_color": "#059669",
-      "course_bg": "#dcfce7",
-      "due_at": "2026-06-21T13:00:00Z",
-      "lock_at": "2026-06-27T03:59:59Z",
-      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1669698",
-      "points": 100.0,
-      "weight": null,
-      "details_html": "<p>Complete One-Page Problem Canvas:</p>\n<ul>\n<li>Refine Exercise #4 output</li>\n<li>Submit</li>\n</ul>\n<p>\u00a0</p>\n<p>Feel free to reach out with any questions:\u00a0</p>\n<p><span><a href=\"mailto:ykogan@northwell.edu\" target=\"_blank\" rel=\"noopener noreferrer\">ykogan@northwell.edu</a> or <a href=\"mailto:amm2645@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">amm2645@cumc.columbia.edu</a></span></p>\n<p>\u00a0</p>",
-      "type": "assignment",
-      "category": "Health Innovation",
-      "source": "canvas",
-      "urgency": "this_week",
-      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
-      "readings": [],
-      "files": [
-        {
-          "name": "Course Modules",
-          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
-        },
-        {
-          "name": "Course Files",
-          "url": "https://courseworks2.columbia.edu/courses/246952/files"
-        },
-        {
-          "name": "Syllabus",
-          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
-        }
-      ],
-      "groups": []
-    },
-    {
-      "id": "canvas-249500-1651829",
-      "title": "Strategic Company Evaluation",
-      "course_short": "Pharma",
-      "course_id": 249500,
-      "course_name": "The Pharmaceutical Industry (P8237)",
-      "course_color": "#4f46e5",
-      "course_bg": "#ede9fe",
-      "due_at": "2026-06-24T03:59:00Z",
-      "lock_at": null,
-      "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651829",
-      "points": 20.0,
-      "weight": "20%",
-      "details_html": "<p><strong>ASSIGNMENT</strong></p>\n<p>2\u20133 page applied analysis evaluating how a pharmaceutical company or comparable stakeholder navigates a key strategic challenge related to innovation, access, pricing, or commercialization. Students may select a case discussed in class or a comparable real-world example. The assignment should identify the core challenge, analyze key tradeoffs, and present a clear recommendation.\u00a0</p>\n<p><strong>RUBRIC</strong></p>\n<table>\n<thead>\n<tr>\n<th>Criteria</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Strategic challenge</strong>: Clearly identifies a relevant challenge related to innovation, access, pricing, or commercialization, and explains why it matters.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Company or stakeholder response</strong>: Describes how the pharmaceutical company or comparable stakeholder navigated the challenge, including key decisions, constraints, or pressures.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Strategic analysis</strong>: Goes beyond summary to analyze the tradeoffs, risks, stakeholder tensions, and consequences of the choices made.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Evaluation and judgment</strong>: Offers a clear point of view on the effectiveness of the response, including what worked, what did not, and/or what could have been done differently.</td>\n<td><strong>4</strong></td>\n</tr>\n<tr>\n<td><strong>Use of evidence and writing quality</strong>: Uses relevant evidence from class materials, readings, discussion, or real-world context. Writing is clear, organized, concise, and appropriate for a 2\u20133 page applied analysis.</td>\n<td><strong>4</strong></td>\n</tr>\n</tbody>\n</table>\n<p><strong>SUBMISSION GUIDELINES</strong></p>\n<ul>\n<li><span>12-point Times New Roman or similar readable font</span></li>\n<li><span>Double spacing</span></li>\n<li><span>1-inch margins</span></li>\n<li><span>Page numbers</span></li>\n<li><span>A clear title</span></li>\n<li><span>In-text citations or footnotes\u00a0</span></li>\n<li><span>A short reference list at the end (does not count toward page limit)</span></li>\n<li><span>Naming convention: LastName_FirstName_StrategicCompanyEvaluation</span></li>\n</ul>\n<p><span>NOTE: Lecture notes and class slides should not be used as cited sources. If you want to reference an idea discussed in class, cite the assigned case, reading, article, report, or other original source that supports the point.</span></p>",
-      "type": "assignment",
-      "category": "Pharma",
-      "source": "canvas",
-      "urgency": "next_two_weeks",
-      "syllabus_url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus",
-      "readings": [],
-      "files": [
-        {
-          "name": "Course Modules",
-          "url": "https://courseworks2.columbia.edu/courses/249500/modules"
-        },
-        {
-          "name": "Course Files",
-          "url": "https://courseworks2.columbia.edu/courses/249500/files"
-        },
-        {
-          "name": "Syllabus",
-          "url": "https://courseworks2.columbia.edu/courses/249500/assignments/syllabus"
-        }
-      ],
-      "groups": []
-    },
     {
       "id": "canvas-47471-1637386-peer-review",
       "title": "APEx: Peer Review",
@@ -90,7 +18,7 @@
       "type": "assignment",
       "category": "EXEC/Grad",
       "source": "canvas",
-      "urgency": "next_two_weeks",
+      "urgency": "overdue",
       "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
       "readings": [],
       "files": [
@@ -105,42 +33,6 @@
         {
           "name": "Syllabus",
           "url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus"
-        }
-      ],
-      "groups": []
-    },
-    {
-      "id": "canvas-246952-1669902",
-      "title": "Build Your Discovery Plan (Task #2)",
-      "course_short": "Health Innovation",
-      "course_id": 246952,
-      "course_name": "Health Innovation & Technology (P8536)",
-      "course_color": "#059669",
-      "course_bg": "#dcfce7",
-      "due_at": "2026-06-29T03:59:59Z",
-      "lock_at": "2026-07-04T03:59:59Z",
-      "link": "https://courseworks2.columbia.edu/courses/246952/assignments/1669902",
-      "points": 100.0,
-      "weight": null,
-      "details_html": "<p>Use AI to build your Discovery Plan, including:</p>\n<ul>\n<li>stakeholders to interview (3\u20135 specific roles)</li>\n<li>questions to ask\u00a0</li>\n<li>assumptions to validate</li>\n<li>data needed and risks, submit</li>\n</ul>\n<p>\u00a0</p>\n<p>\u00a0</p>",
-      "type": "assignment",
-      "category": "Health Innovation",
-      "source": "canvas",
-      "urgency": "next_two_weeks",
-      "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
-      "readings": [],
-      "files": [
-        {
-          "name": "Course Modules",
-          "url": "https://courseworks2.columbia.edu/courses/246952/modules"
-        },
-        {
-          "name": "Course Files",
-          "url": "https://courseworks2.columbia.edu/courses/246952/files"
-        },
-        {
-          "name": "Syllabus",
-          "url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus"
         }
       ],
       "groups": []
@@ -162,7 +54,7 @@
       "type": "assignment",
       "category": "EXEC/Grad",
       "source": "canvas",
-      "urgency": "later",
+      "urgency": "due_soon",
       "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
       "readings": [],
       "files": [
@@ -198,7 +90,7 @@
       "type": "assignment",
       "category": "Health Innovation",
       "source": "canvas",
-      "urgency": "later",
+      "urgency": "this_week",
       "syllabus_url": "https://courseworks2.columbia.edu/courses/246952/assignments/syllabus",
       "readings": [],
       "files": [
@@ -234,7 +126,7 @@
       "type": "assignment",
       "category": "EXEC/Grad",
       "source": "canvas",
-      "urgency": "later",
+      "urgency": "next_two_weeks",
       "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
       "readings": [],
       "files": [
@@ -272,7 +164,7 @@
       "file_status": "pending",
       "category": "Pharma",
       "source": "syllabus",
-      "urgency": "later",
+      "urgency": "next_two_weeks",
       "syllabus_url": null,
       "readings_list": [
         {
@@ -317,7 +209,7 @@
       "file_status": "pending",
       "category": "Pharma",
       "source": "syllabus",
-      "urgency": "later",
+      "urgency": "next_two_weeks",
       "syllabus_url": null,
       "readings_list": [
         {
@@ -366,7 +258,7 @@
       "type": "assignment",
       "category": "EXEC/Grad",
       "source": "canvas",
-      "urgency": "later",
+      "urgency": "next_two_weeks",
       "syllabus_url": "https://courseworks2.columbia.edu/courses/47471/assignments/syllabus",
       "readings": [],
       "files": [
@@ -398,7 +290,7 @@
       "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651830",
       "points": 25.0,
       "weight": "25%",
-      "details_html": "",
+      "details_html": "<p><strong>ASSIGNMENT</strong><br>2\u20133 page policy memo taking a clear, evidence-based position on a policy issue related to pharmaceutical pricing, access, or innovation. The memo should present a concise argument, analyze relevant tradeoffs, and recommend a specific course of action. Students can use assigned readings and case materials as a foundation; relevant outside sources may also be used with proper citation.\u00a0 A strong memo should read as though it is advising a decision-maker, not simply explaining a policy issue. It should make a clear recommendation, acknowledge tradeoffs, and support its position with evidence.</p>\n<h2><strong><span>RUBRIC</span></strong></h2>\n<div>\n<div>\n<table>\n<thead>\n<tr>\n<th>Criteria</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Policy issue and context:</strong> Clearly identifies a relevant policy issue related to pharmaceutical pricing, access, or innovation, explains why it matters, and situates the issue within the broader pharmaceutical/public health landscape.</td>\n<td>5</td>\n</tr>\n<tr>\n<td><strong>Clear position and recommendation:</strong> Takes a clear, focused position on what should be done and provides a specific, actionable recommendation or course of action. The memo should move beyond describing the issue to advising a decision-maker.</td>\n<td>5</td>\n</tr>\n<tr>\n<td><strong>Evidence and use of course concepts:</strong> Uses relevant evidence from assigned readings, cases, class discussion, and/or credible outside sources to support the argument. Demonstrates understanding of course concepts and applies them appropriately.</td>\n<td>5</td>\n</tr>\n<tr>\n<td><strong>Analysis of tradeoffs and stakeholder implications:</strong> Analyzes key tradeoffs, risks, implementation challenges, and stakeholder impacts, including implications for patients, payers, government, industry, health systems, and/or society.</td>\n<td>5</td>\n</tr>\n<tr>\n<td><strong>Memo structure and writing quality:</strong> Writing is clear, concise, organized, and appropriate for a policy memo. The memo uses a logical structure, avoids unnecessary summary, and communicates effectively for an executive or policy audience.</td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<p><strong>Total: 25 points</strong></p>\n<h2><strong><span>SUBMISSION GUIDELINES</span></strong></h2>\n<ul>\n<li>2\u20133 pages</li>\n<li>12-point Times New Roman or similar readable font</li>\n<li>Single or double spacing acceptable, depending on memo format</li>\n<li>1-inch margins</li>\n<li>Page numbers</li>\n<li>Clear title or memo header</li>\n<li>In-text citations or footnotes</li>\n<li>Short reference list at the end, which does not count toward page limit</li>\n<li>Naming convention: <code>LastName_FirstName_PolicyMemo</code></li>\n</ul>\n<p><strong>Note:</strong> Lecture notes and class slides should not be used as cited sources. If referencing an idea discussed in class, cite the assigned case, reading, article, report, or other original source that supports the point.</p>",
       "type": "assignment",
       "category": "Pharma",
       "source": "canvas",
@@ -429,12 +321,12 @@
       "course_name": "The Pharmaceutical Industry (P8237)",
       "course_color": "#4f46e5",
       "course_bg": "#ede9fe",
-      "due_at": "2026-08-01T03:59:59Z",
+      "due_at": "2026-08-03T03:59:59Z",
       "lock_at": null,
       "link": "https://courseworks2.columbia.edu/courses/249500/assignments/1651828",
       "points": 40.0,
       "weight": "40%",
-      "details_html": "",
+      "details_html": "<p><strong>ASSIGNMENT</strong><br>5\u20137 page paper analyzing a key unresolved tension in the pharmaceutical system and proposing a path forward. The paper should integrate course concepts, readings, cases, and discussions to develop a clear, well-supported perspective on how the pharmaceutical ecosystem can better balance innovation, access, and equity. Students should reference course materials, typically at least three cases or readings, and may also incorporate outside sources with proper citation.\u00a0 A strong synthesis paper should not simply summarize course themes. It should make an argument, connect ideas across multiple parts of the course, acknowledge real-world tradeoffs, and propose a thoughtful path forward.</p>\n<h2><strong><span>RUBRIC</span></strong></h2>\n<div>\n<div>\n<table>\n<thead>\n<tr>\n<th>Criteria</th>\n<th>Points</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Unresolved tension and significance:</strong> Clearly identifies a meaningful unresolved tension in the pharmaceutical system and explains why it matters for patients, public health, industry, policymakers, and/or society. The paper frames the issue with enough specificity to support focused analysis.</td>\n<td>6</td>\n</tr>\n<tr>\n<td><strong>Synthesis across course concepts:</strong> Integrates concepts from across the course, including innovation, regulation, pricing, access, commercialization, ethics, equity, and/or public trust. The paper should connect ideas across sessions rather than treating them as separate topics.</td>\n<td>7</td>\n</tr>\n<tr>\n<td><strong>Depth of analysis and tradeoffs:</strong> Goes beyond description to analyze competing priorities, stakeholder incentives, risks, unintended consequences, and practical constraints. The paper demonstrates clear understanding of why the issue is difficult to solve.</td>\n<td>8</td>\n</tr>\n<tr>\n<td><strong>Evidence and use of sources:</strong> Uses relevant evidence from course readings, cases, and credible outside sources to support the argument. Sources are used thoughtfully and appropriately, rather than inserted as general background.</td>\n<td>6</td>\n</tr>\n<tr>\n<td><strong>Path forward and judgment:</strong> Proposes a clear, realistic path forward or set of recommendations. The paper explains why this approach is preferable to reasonable alternatives and demonstrates sound judgment about feasibility, equity, and implementation.</td>\n<td>8</td>\n</tr>\n<tr>\n<td><strong>Writing quality, organization, and clarity:</strong> Writing is clear, concise, well-organized, and appropriate for a graduate-level synthesis paper. The paper has a logical structure, a coherent throughline, and a polished final argument.</td>\n<td>5</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div>\n<p><strong>Total: 40 points</strong></p>\n<h2><strong><span>SUBMISSION GUIDELINES</span></strong></h2>\n<ul>\n<li>5\u20137 pages</li>\n<li>12-point Times New Roman or similar readable font</li>\n<li>Double spacing</li>\n<li>1-inch margins</li>\n<li>Page numbers</li>\n<li>Clear title</li>\n<li>In-text citations or footnotes</li>\n<li>Short reference list at the end, which does not count toward page limit</li>\n<li>Naming convention: <code>LastName_FirstName_FinalSynthesisPaper</code></li>\n</ul>\n<p><strong>Note:</strong> Lecture notes and class slides should not be used as cited sources. If referencing an idea discussed in class, cite the assigned case, reading, article, report, or other original source that supports the point.</p>",
       "type": "assignment",
       "category": "Pharma",
       "source": "canvas",
@@ -468,9 +360,9 @@
       "due_at": "2026-08-10T03:59:00Z",
       "lock_at": "2026-11-01T03:59:59Z",
       "link": "https://courseworks2.columbia.edu/courses/47471/assignments/1637292",
-      "points": 0.0,
+      "points": 24.0,
       "weight": null,
-      "details_html": "<p>\u00a0</p>\n<p><strong>\u00a0</strong></p>\n<p><strong>Integrative Learning Experience (ILE)</strong></p>\n<p>The Council on Education for Public Health (CEPH) requires that all MPH students complete an Integrative Learning Experience (ILE).</p>\n<p><br>In the Department of Health Policy & Management (HPM) at Columbia University Mailman School of Public Health, students complete a five-page culminating paper near the end of their program of study. The paper is an opportunity for students to demonstrate their ability to synthesize program competencies and apply them to address complex public health and health systems problems.</p>\n<p>\u00a0</p>\n<p>Students will choose one of two formats to fulfill the ILE requirement: (1) a policy proposal or (2) a business proposal. ILE papers are reviewed and approved by the student\u2019s Faculty Advisor. The writing assignment is an opportunity for students to demonstrate their understanding of public health principles and practices, critical thinking skills, and the application of theoretical knowledge to real-world scenarios.</p>\n<ul>\n<li>This paper must be submitted to Canvas by August 9, 2026.</li>\n<li>Your paper should have a minimum of five pages and a maximum 10 pages of prose.</li>\n<li>Unlimited graphical exhibits are allowed and should be included at the end of the paper (after the endnotes and bibliography)\n<ol>\n<li>All exhibits must be referenced, in numerical order, in the prose.</li>\n</ol>\n</li>\n<li>Papers should be double-spaced, 12-point font, one-inch margins.</li>\n<li>Your paper will be graded by your Faculty Advisor.</li>\n<li>A rubric has been uploaded to Canvas, against which you will be graded. You must Meet Expectations in all criteria to satisfy this requirement and pass. You will be notified in writing if your paper is awarded Distinction. Any paper that does not Meet Expectations will require resubmission that addresses all faculty comments. Papers should be resubmitted within 48 hours of notification.</li>\n<li>Students may use AI tools to generate preliminary ideas and to conduct broad research around a topic. When doing so, it is mandatory for the student to declare the use of AI in their Works Cited or Bibliography. The verbatim use of AI-generated material or the use of AI-generated material with cursory semantic change is not permitted. You are responsible for all facts and citations within your work. The expectation is that the submitted work is original and is produced independently. You may not resubmit a paper that has been previously graded at Columbia University.</li>\n<li>Please contact your Faculty Advisor or Casey Malone (<a href=\"mailto:cm3926@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">cm3926@cumc.columbia.edu</a>) with any questions.</li>\n</ul>\n<p>\u00a0</p>\n<p>Example papers for Business Plan: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23759677?verifier=23364mpgKixfMRhiHJL2WwcztkWQajtK1Ie6vOZE&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan sample 1.pdf</a> \u00a0 <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23760884?verifier=jImqnuJqRl3HZFPgzASjlmNOyPX2nbmusKlYwaAj&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan Sample 2.pdf</a> \u00a0<a href=\"https://courseworks2.columbia.edu/courses/47471/files/23760883?verifier=pkMMDWgBpgiB3L8ffl45VPcCMD1GmbqSY1i37Dez&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan Sample 3.pdf\u00a0</a></p>\n<p>Example papers for Policy Proposal: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988698?verifier=SVelbNK3u4uEwIp7j30TrjO05pqVso7Xl2PgVnQm&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE Paper Example 1.pdf</a> \u00a0<a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988697?verifier=T7McNZ3Gql9MfRaCHCD757K1ICNM1i0TzLIyNh79&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE Paper Example 4 (Policy).pdf</a></p>\n<p>\u00a0</p>\n<p><strong>PAPER FORMATS</strong></p>\n<p>\u00a0</p>\n<p><strong>(1) Policy Proposal</strong></p>\n<p>\u00a0</p>\n<p>The policy proposal should include the following elements:</p>\n<ul>\n<li>Topic: Policy Question: What question will you examine in this proposal?</li>\n<li>Executive Summary/Abstract (1/2 pg. max, 150 words)</li>\n<li>What is the current problem the policy is aiming to address?\n<ul>\n<li>Historical background</li>\n<li>Context</li>\n</ul>\n</li>\n<li>What are some possible solutions to this problem?\n<ul>\n<li>Pros and cons of each</li>\n</ul>\n</li>\n<li>Proposed Policy: What policy do you think is the best approach?</li>\n<li>Evidence in Support\n<ul>\n<li>Why is this policy better than the alternatives?</li>\n<li>Include an example to explain reasoning for why this is the best policy.</li>\n<li>What data/evidence supports your proposal?</li>\n</ul>\n</li>\n<li>Politics of Policy\n<ul>\n<li>What is the political landscape surrounding this problem?</li>\n<li>What social groups would be affected by this policy?</li>\n<li>What other groups might get involved? (Non-profits? Political entities? Religious groups?)</li>\n<li>Cost</li>\n<li>Ideological arguments</li>\n<li>Other considerations</li>\n</ul>\n</li>\n<li>Implementation\n<ul>\n<li>How will this be executed?</li>\n</ul>\n</li>\n</ul>\n<p>\u00a0</p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>(2) Business Proposal (Strategic Plan, Program Plan, Project Design)</strong></p>\n<p>\u00a0</p>\n<p>The Proposal should include the following elements:</p>\n<ul>\n<li>Executive Summary (max one page)\n<ul>\n<li>What is the problem or opportunity you are trying to address?</li>\n<li>Key innovative concept you are proposing</li>\n</ul>\n</li>\n<li>Environment/Market\n<ul>\n<li>Who are the key stakeholders?</li>\n<li>What are the important needs/wants of these stakeholders, e.g. unmet user/patient needs, underserved markets, regulatory restrictions, intense competition (perhaps from a new market disruptor)?</li>\n<li>How \u201cbig\u201d is the market or population you intend to serve? Quantify the total need, the share of the population that is currently served in some way, and the un- or under-served segments you intend to focus on.</li>\n</ul>\n</li>\n<li>Given the items above, how will you address the need?\n<ul>\n<li>What options are available to you? (Discuss a minimum of two options)</li>\n<li>What is your recommendation and why? (Based on what criteria?)</li>\n<li>What metrics and targets will you measure to ensure success? (What can you measure to indicate progress or impact?)</li>\n<li>What short-, medium-, and long-term implementation steps are required to achieve key targets?</li>\n<li>What resources\u2014budget, staffing, coordination, alliances, partnerships, etc.\u2014are needed to ensure success?</li>\n<li>What risks\u2014and mitigating factors\u2014need to be considered given your proposed course of action?</li>\n</ul>\n</li>\n</ul>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>ILE Culminating Paper Rubric for EXEC Students</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Requirement</strong></p>\n</td>\n<td>\n<p><strong>Exceeds Mastery (3 points)</strong></p>\n</td>\n<td>\n<p><strong>Meets Mastery </strong></p>\n<p><strong>(2 points)</strong></p>\n</td>\n<td>\n<p><strong>Near Mastery </strong></p>\n<p><strong>(1 point)</strong></p>\n</td>\n<td>\n<p><strong>Well Below Mastery </strong></p>\n<p><strong>(0 points)</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing skills: Organization</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The paper follows the template, communicates ideas effectively, and presents ideas clearly.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Paper is disorganized and does not include all elements of the template.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing sills: Fundamentals</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Polished grammar, syntax, and mechanics.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Poor grammar, syntax, and mechanics.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing skills: Tone</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The paper has a professional tone appropriate to the expected audience. The case made is persuasive.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The tone is unprofessional or inappropriate to the expected audience. The case is not made or is not persuasive.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Interpret results of data analysis for public health research, policy, or practice.</p>\n</td>\n<td>\n<p>Demonstrates a sophisticated interpretation of relevant data, including evidence that both supports and challenges the proposed recommendation. Data are analyzed (not merely described), clearly linked to the policy or strategic decision, and used persuasively to justify the chosen course of action.</p>\n</td>\n<td>\n<p>The paper includes appropriate and accurate analysis of relevant data that is clearly connected to and supports the proposed policy initiative or business plan. Data interpretations are sound, though analysis may focus primarily on supporting evidence.</p>\n</td>\n<td>\n<p>Data are included, but analysis is limited, descriptive, or superficial. Interpretations are weak or inconsistently connected to the policy proposal or strategic plan.</p>\n</td>\n<td>\n<p>Data are absent, inaccurately interpreted, or not meaningfully connected to the policy proposal or strategic plan.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Propose strategies to identify stakeholders and build coalitions and partnerships for influencing public health outcomes.</p>\n</td>\n<td>\n<p>Presents a comprehensive analysis of existing and potential stakeholders, including their interests, influence, and roles. It proposes a clear, innovative, and well-justified plan for engaging key partners and building coalitions that are likely to influence public health outcomes and advance the proposed initiative.</p>\n</td>\n<td>\n<p>Includes a thoughtful and appropriate plan to identify key stakeholders and build coalitions or partnerships relevant to the proposed policy or strategic plan. Strategies are feasible and aligned with the intended public health outcomes.</p>\n</td>\n<td>\n<p>Stakeholder or coalition strategies are included but lack sufficient detail, strategic rationale, or clear connection to the proposed initiative or public health outcomes.</p>\n</td>\n<td>\n<p>Strategies for identifying stakeholders or building coalitions are absent, unclear, or inappropriate. Key populations, partners, or sectors are overlooked or inadequately addressed.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Apply fundamental principles of research methods and data management to develop and synthesize research questions in health policy and management.</p>\n</td>\n<td>\n<p>Demonstrates rigorous and well-integrated application of appropriate research methods and data management principles. Data analysis is thorough, methodologically sound, and clearly aligned with the research question, persuasively demonstrating that the proposed policy or management approach is well founded.</p>\n</td>\n<td>\n<p>Applies appropriate research methods and data management principles clearly and correctly to address the stated research question. Data analysis is coherent and supports the inquiry, though methodological justification or integration may be limited.</p>\n</td>\n<td>\n<p>Application of research methods and data management principles is uneven, fragmented, or superficial. Data analysis is limited or inconsistently connected to the research question.</p>\n</td>\n<td>\n<p>Research methods and data management principles are absent, unclear, or incorrectly applied. The research question is poorly defined or not meaningfully addressed through analysis.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>\u00a0</p>\n<p>\u00a0</p>",
+      "details_html": "<p>\u00a0</p>\n<p><strong>\u00a0</strong></p>\n<p><strong>Integrative Learning Experience (ILE)</strong></p>\n<p>The Council on Education for Public Health (CEPH) requires that all MPH students complete an Integrative Learning Experience (ILE).</p>\n<p><br>In the Department of Health Policy & Management (HPM) at Columbia University Mailman School of Public Health, students complete a five-page culminating paper near the end of their program of study. The paper is an opportunity for students to demonstrate their ability to synthesize program competencies and apply them to address complex public health and health systems problems.</p>\n<p>\u00a0</p>\n<p>Students will choose one of two formats to fulfill the ILE requirement: (1) a policy proposal or (2) a business proposal. ILE papers are reviewed and approved by the student\u2019s Faculty Advisor. The writing assignment is an opportunity for students to demonstrate their understanding of public health principles and practices, critical thinking skills, and the application of theoretical knowledge to real-world scenarios.</p>\n<ul>\n<li>This paper must be submitted to Canvas by August 9, 2026.</li>\n<li>Your paper should have a minimum of five pages and a maximum 10 pages of prose.</li>\n<li>Unlimited graphical exhibits are allowed and should be included at the end of the paper (after the endnotes and bibliography)\n<ol>\n<li>All exhibits must be referenced, in numerical order, in the prose.</li>\n</ol>\n</li>\n<li>Papers should be double-spaced, 12-point font, one-inch margins.</li>\n<li>Your paper will be graded by your Faculty Advisor.</li>\n<li>A rubric has been uploaded to Canvas, against which you will be graded. You must Meet Expectations in all criteria to satisfy this requirement and pass. You will be notified in writing if your paper is awarded Distinction. Any paper that does not Meet Expectations will require resubmission that addresses all faculty comments. Papers should be resubmitted within 48 hours of notification.</li>\n<li>Students may use AI tools to generate preliminary ideas and to conduct broad research around a topic. When doing so, it is mandatory for the student to declare the use of AI in their Works Cited or Bibliography. The verbatim use of AI-generated material or the use of AI-generated material with cursory semantic change is not permitted. You are responsible for all facts and citations within your work. The expectation is that the submitted work is original and is produced independently. You may not resubmit a paper that has been previously graded at Columbia University.</li>\n<li>Please contact your Faculty Advisor or Casey Malone (<a href=\"mailto:cm3926@cumc.columbia.edu\" target=\"_blank\" rel=\"noopener noreferrer\">cm3926@cumc.columbia.edu</a>) with any questions.</li>\n</ul>\n<p>\u00a0</p>\n<p>Example papers for Business Plan: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23759677?verifier=23364mpgKixfMRhiHJL2WwcztkWQajtK1Ie6vOZE&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan sample 1.pdf</a> \u00a0 <a href=\"https://courseworks2.columbia.edu/courses/47471/files/23760884?verifier=jImqnuJqRl3HZFPgzASjlmNOyPX2nbmusKlYwaAj&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan Sample 2.pdf</a> \u00a0<a href=\"https://courseworks2.columbia.edu/courses/47471/files/23760883?verifier=pkMMDWgBpgiB3L8ffl45VPcCMD1GmbqSY1i37Dez&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE EXEC Business Plan Sample 3.pdf\u00a0</a></p>\n<p>Example papers for Policy Proposal: <a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988698?verifier=SVelbNK3u4uEwIp7j30TrjO05pqVso7Xl2PgVnQm&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE Paper Example 1.pdf</a> \u00a0<a href=\"https://courseworks2.columbia.edu/courses/47471/files/26988697?verifier=T7McNZ3Gql9MfRaCHCD757K1ICNM1i0TzLIyNh79&wrap=1\" target=\"_blank\" rel=\"noopener noreferrer\">ILE Paper Example 4 (Policy).pdf</a></p>\n<p>\u00a0</p>\n<p><strong>PAPER FORMATS</strong></p>\n<p>\u00a0</p>\n<p><strong>(1) Policy Proposal</strong></p>\n<p>\u00a0</p>\n<p>The policy proposal should include the following elements:</p>\n<ul>\n<li>Topic: Policy Question: What question will you examine in this proposal?</li>\n<li>Executive Summary/Abstract (1/2 pg. max, 150 words)</li>\n<li>What is the current problem the policy is aiming to address?\n<ul>\n<li>Historical background</li>\n<li>Context</li>\n</ul>\n</li>\n<li>What are some possible solutions to this problem?\n<ul>\n<li>Pros and cons of each</li>\n</ul>\n</li>\n<li>Proposed Policy: What policy do you think is the best approach?</li>\n<li>Evidence in Support\n<ul>\n<li>Why is this policy better than the alternatives?</li>\n<li>Include an example to explain reasoning for why this is the best policy.</li>\n<li>What data/evidence supports your proposal?</li>\n</ul>\n</li>\n<li>Politics of Policy\n<ul>\n<li>What is the political landscape surrounding this problem?</li>\n<li>What social groups would be affected by this policy?</li>\n<li>What other groups might get involved? (Non-profits? Political entities? Religious groups?)</li>\n<li>Cost</li>\n<li>Ideological arguments</li>\n<li>Other considerations</li>\n</ul>\n</li>\n<li>Implementation\n<ul>\n<li>How will this be executed?</li>\n</ul>\n</li>\n</ul>\n<p>\u00a0</p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>(2) Business Proposal (Strategic Plan, Program Plan, Project Design)</strong></p>\n<p>\u00a0</p>\n<p>The Proposal should include the following elements:</p>\n<ul>\n<li>Executive Summary (max one page)\n<ul>\n<li>What is the problem or opportunity you are trying to address?</li>\n<li>Key innovative concept you are proposing</li>\n</ul>\n</li>\n<li>Environment/Market\n<ul>\n<li>Who are the key stakeholders?</li>\n<li>What are the important needs/wants of these stakeholders, e.g. unmet user/patient needs, underserved markets, regulatory restrictions, intense competition (perhaps from a new market disruptor)?</li>\n<li>How \u201cbig\u201d is the market or population you intend to serve? Quantify the total need, the share of the population that is currently served in some way, and the un- or under-served segments you intend to focus on.</li>\n</ul>\n</li>\n<li>Given the items above, how will you address the need?\n<ul>\n<li>What options are available to you? (Discuss a minimum of two options)</li>\n<li>What is your recommendation and why? (Based on what criteria?)</li>\n<li>What metrics and targets will you measure to ensure success? (What can you measure to indicate progress or impact?)</li>\n<li>What short-, medium-, and long-term implementation steps are required to achieve key targets?</li>\n<li>What resources\u2014budget, staffing, coordination, alliances, partnerships, etc.\u2014are needed to ensure success?</li>\n<li>What risks\u2014and mitigating factors\u2014need to be considered given your proposed course of action?</li>\n</ul>\n</li>\n</ul>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>ILE Culminating Paper Rubric for EXEC Students</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<p><strong>\u00a0</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Requirement</strong></p>\n</td>\n<td>\n<p><strong>Distinct Mastery </strong></p>\n<p><strong>(5 points)</strong></p>\n</td>\n<td>\n<p><strong>Mastery </strong></p>\n<p><strong>(4 points)</strong></p>\n</td>\n<td>\n<p><strong>Meets Competency</strong></p>\n<p><strong>(3 points)</strong></p>\n</td>\n<td>\n<p><strong>Progressing</strong></p>\n<p><strong>(2 points)</strong></p>\n</td>\n<td>\n<p><strong>Emerging</strong></p>\n<p><strong>(1 points)</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing skills: Organization</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The paper follows the template, communicates ideas effectively, and presents ideas clearly.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Paper is disorganized and does not include all elements of the template.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing sills: Fundamentals</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Polished grammar, syntax, and mechanics.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>Poor grammar, syntax, and mechanics.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Writing skills: Tone</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The paper has a professional tone appropriate to the expected audience. The case made is persuasive.</p>\n</td>\n<td>\n<p>n/a</p>\n</td>\n<td>\n<p>The tone is unprofessional or inappropriate to the expected audience. The case is not made or is not persuasive.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>\u00a0</p>\n<p><strong>Collect, interpret, and apply quantitative and qualitative data to evaluate program, project, or organizational performance.\u200b.\u200b</strong></p>\n</td>\n<td>\n<p>The student has gone beyond mastery and is able to utilize key takeaways from analysis to make recommendations for improvements and implementation.</p>\n</td>\n<td>\n<p>Demonstrates a sophisticated interpretation of relevant data, including evidence that both supports and challenges the proposed recommendation. Data are analyzed (not merely described), clearly linked to the policy or strategic decision, and used persuasively to justify the chosen course of action.</p>\n</td>\n<td>\n<p>The paper includes appropriate and accurate analysis of relevant data that is clearly connected to and supports the proposed policy initiative or business plan. Data interpretations are sound, though analysis may focus primarily on supporting evidence.</p>\n</td>\n<td>\n<p>Data are included, but analysis is limited, descriptive, or superficial. Interpretations are weak or inconsistently connected to the policy proposal or strategic plan.</p>\n</td>\n<td>\n<p>Data are absent, inaccurately interpreted, or not meaningfully connected to the policy proposal or strategic plan.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Analyze data and trends to inform strategic organizational direction and support evidence-based decision making.\u200b</strong></p>\n</td>\n<td>\n<p>The student has gone beyond mastery and is able to recommend new directions for policy or business planning based on data analysis.</p>\n</td>\n<td>\n<p>Presents a comprehensive analysis of data and trends and provides suggestions for new strategic direction.</p>\n</td>\n<td>\n<p>Includes a thoughtful and appropriate analysis relevant to the proposed policy or strategic plan. Strategies are feasible and aligned with the intended public health outcomes.</p>\n</td>\n<td>\n<p>Data analysis is included but lacks sufficient detail, strategic rationale, or clear connection to the proposed initiative or public health outcomes.</p>\n</td>\n<td>\n<p>Data analysis is absent, unclear, or inappropriate. Key populations, partners, or sectors are overlooked or inadequately addressed.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><strong>Apply policy and management frameworks to develop and justify recommendations for healthcare and public health system challenges related to quality, access, cost, and equity.</strong></p>\n</td>\n<td>\n<p>Goes beyond mastery and includes bold recommendations for implementation.</p>\n</td>\n<td>\n<p>Demonstrates rigorous and well-integrated application of appropriate policy and management frameworks, persuasively demonstrating that the proposed policy or management approach is well founded.</p>\n</td>\n<td>\n<p>Applies appropriate policy and management frameworks clearly and correctly to address the stated research question, though methodological justification or integration may be limited.</p>\n</td>\n<td>\n<p>Application of policy and management frameworks is uneven, fragmented, or superficial or inconsistently connected to the research question.</p>\n</td>\n<td>\n<p>Policy and management frameworks are absent, unclear, or incorrectly applied. The research question is poorly defined or not meaningfully addressed through analysis.</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>\u00a0</p>\n<p>\u00a0</p>",
       "type": "assignment",
       "category": "EXEC/Grad",
       "source": "canvas",
